@@ -18,6 +18,50 @@
         <span style="font-family: 'Nippo', sans-serif;">Web Designer</span> & <span style="font-family: 'Nippo', sans-serif;">Developer</span></h1>
     </div>
   </section>
+  <section class="flex flex-col p-20">
+    <div class="flex flex-row justify-between pl-12 pr-12"> 
+      <i class="devicon-javascript-plain text-pink-400 text-8xl"></i>
+      <i class="devicon-python-plain text-pink-400 text-8xl"></i>
+      <i class="devicon-tailwindcss-original text-pink-400 text-8xl"></i> 
+      <i class="devicon-mysql-plain-wordmark text-pink-400 text-8xl"></i>
+      <i class="devicon-vuejs-plain text-pink-400 text-8xl"></i>
+      <i class="devicon-php-plain text-pink-400 text-8xl"></i>
+      <i class="devicon-git-plain-wordmark text-pink-400 text-8xl"></i>
+      <i class="devicon-figma-plain text-pink-400 text-8xl"></i>
+    </div>
+  </section>
+  <section class="flex flex-row space-x-6 pl-10 pr-10 pb-6">
+  <div class="flex flex-col bg-slate-50 p-6 rounded-lg shadow-shadow1" >
+    <p class="text-xl font-bold" style="font-family: 'Nippo', sans-serif;">01</p>
+    <h2 class="text-2xl font-semibold">Web Design</h2>
+    <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur at eaque aliquid exercitationem numquam quo?</p>
+    <div class="flex items-center mt-4">
+      <button class="bg-pink-400 text-white px-4 py-2 rounded hover:bg-pink-500 transition">About Web Design</button>
+      <img src="./img/arrow.png" alt="" class="w-4 h-4 ml-2">
+    </div>
+  </div>
+
+  <div class="flex flex-col bg-slate-50 p-6 rounded-lg shadow-shadow2">
+    <p class="text-xl font-bold" style="font-family: 'Nippo', sans-serif;">02</p>
+    <h2 class="text-2xl font-semibold">Development</h2>
+    <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur at eaque aliquid exercitationem numquam quo?</p>
+    <div class="flex items-center mt-4">
+      <button class="bg-pink-400 text-white px-4 py-2 rounded hover:bg-pink-500 transition">About Development</button>
+      <img src="./img/arrow.png" alt="" class="w-4 h-4 ml-2">
+    </div>
+  </div>
+
+  <div class="flex flex-col bg-slate-50 p-6 rounded-lg shadow-shadow3">
+    <p class="text-xl font-bold" style="font-family: 'Nippo', sans-serif;">03</p>
+    <h2 class="text-2xl font-semibold">Development</h2>
+    <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur at eaque aliquid exercitationem numquam quo?</p>
+    <div class="flex items-center mt-4">
+      <button class="bg-pink-400 text-white px-4 py-2 rounded hover:bg-pink-500 transition">About Development</button>
+      <img src="./img/arrow.png" alt="" class="w-4 h-4 ml-2">
+    </div>
+  </div>
+</section>
+
 </template>
 
 <style>
