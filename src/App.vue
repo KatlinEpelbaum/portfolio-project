@@ -31,40 +31,42 @@
     </div>
   </section>
   <section class="flex flex-row space-x-6 pl-12 pr-12 pb-10">
-  <div class="flex flex-col bg-slate-50 p-6 rounded-lg shadow-shadow1 border-2 border-pink-400" >
-    <p class="text-xl font-bold" style="font-family: 'Nippo', sans-serif;">01</p>
-    <h2 class="text-2xl font-semibold">Web Design</h2>
-    <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur at eaque aliquid exercitationem numquam quo?</p>
-    <div class="flex items-center mt-4">
-      <button class="bg-pink-400 text-white px-4 py-2 rounded hover:bg-pink-500 transition">About Web Design</button>
+    <div class="flex flex-col bg-slate-50 p-6 rounded-lg shadow-shadow1 border-2 border-pink-400" >
+      <p class="text-xl font-bold" style="font-family: 'Nippo', sans-serif;">01</p>
+      <h2 class="text-2xl font-semibold">Web Design</h2>
+      <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur at eaque aliquid exercitationem numquam quo?</p>
+      <div class="flex items-center mt-4">
+        <button class="bg-pink-400 text-white px-4 py-2 rounded hover:bg-pink-500 transition">About Web Design</button>
+      </div>
     </div>
-  </div>
 
-  <div class="flex flex-col bg-slate-50 p-6 rounded-lg shadow-shadow2 border-2 border-pink-400">
-    <p class="text-xl font-bold" style="font-family: 'Nippo', sans-serif;">02</p>
-    <h2 class="text-2xl font-semibold">Development</h2>
-    <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur at eaque aliquid exercitationem numquam quo?</p>
-    <div class="flex items-center mt-4">
-      <button class="bg-pink-400 text-white px-4 py-2 rounded hover:bg-pink-500 transition">About Development</button>
+    <div class="flex flex-col bg-slate-50 p-6 rounded-lg shadow-shadow2 border-2 border-pink-400">
+      <p class="text-xl font-bold" style="font-family: 'Nippo', sans-serif;">02</p>
+      <h2 class="text-2xl font-semibold">Development</h2>
+      <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur at eaque aliquid exercitationem numquam quo?</p>
+      <div class="flex items-center mt-4">
+        <button class="bg-pink-400 text-white px-4 py-2 rounded hover:bg-pink-500 transition">About Development</button>
+      </div>
     </div>
-  </div>
 
-  <div class="flex flex-col bg-slate-50 p-6 rounded-lg shadow-shadow3 border-2 border-pink-400 ">
-    <p class="text-xl font-bold" style="font-family: 'Nippo', sans-serif;">03</p>
-    <h2 class="text-2xl font-semibold">Development</h2>
-    <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur at eaque aliquid exercitationem numquam quo?</p>
-    <div class="flex items-center mt-4">
-      <button class="bg-pink-400 text-white px-4 py-2 rounded  hover:bg-pink-500 transition">About Development</button>
+    <div class="flex flex-col bg-slate-50 p-6 rounded-lg shadow-shadow3 border-2 border-pink-400 ">
+      <p class="text-xl font-bold" style="font-family: 'Nippo', sans-serif;">03</p>
+      <h2 class="text-2xl font-semibold">Development</h2>
+      <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur at eaque aliquid exercitationem numquam quo?</p>
+      <div class="flex items-center mt-4">
+        <button class="bg-pink-400 text-white px-4 py-2 rounded  hover:bg-pink-500 transition">About Development</button>
+      </div>
     </div>
-  </div>
-</section>
-
+  </section>
+  <section>
+    
+  </section>
 </template>
 
 <style>
-.flex2 {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+  .flex2 {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
 </style>
