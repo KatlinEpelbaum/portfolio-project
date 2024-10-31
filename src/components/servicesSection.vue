@@ -3,7 +3,7 @@
       <ServiceCard
         number="01"
         title="Web Design"
-        description="Lorem, ipsum dolor sit amet consectetur adipisicing elit."
+        description="Visually stunning web designs that captivate your audience by blending your brand voice and customer needs."
         buttonText="About Web Design"
         shadowClass="shadow-shadow1"
       />
@@ -11,7 +11,7 @@
       <ServiceCard
         number="02"
         title="Development"
-        description="Lorem, ipsum dolor sit amet consectetur adipisicing elit."
+        description="Get custom web development solutions that are tailored to your specifications, designed to deliver a flawless user experience."
         buttonText="About Development"
         shadowClass="shadow-shadow2"
       />
@@ -19,7 +19,7 @@
       <ServiceCard
         number="03"
         title="SEO Optimization"
-        description="Lorem, ipsum dolor sit amet consectetur adipisicing elit."
+        description="Proven SEO strategies that enhance your online performance, bringing you to the forefront of organic search results."
         buttonText="About SEO"
         shadowClass="shadow-shadow3"
       />
