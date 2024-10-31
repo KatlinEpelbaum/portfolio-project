@@ -5,7 +5,8 @@
     <ServicesSection />
     <ProcessSection />
     <Timeline />
-    <ClientTestimonials /> 
+    <ClientTestimonials />
+    <About /> 
   </div>
 </template>
 
@@ -16,7 +17,7 @@ import ServicesSection from './components/servicesSection.vue';
 import ProcessSection from './components/processSection.vue';
 import Timeline from './components/Timeline.vue';
 import ClientTestimonials from './components/ClientTestimonials.vue';
-
+import About from './components/About.vue';
 export default {
   name: 'App',
   components: {
@@ -26,6 +27,7 @@ export default {
     ProcessSection,
     Timeline,
     ClientTestimonials,
+    About,
   },
 };
 </script>
