@@ -1,8 +1,8 @@
 <template>
 <section class="your-section-class flex flex-col h-screen bg-[url('https://images.beta.cosmos.so/76a93c90-627c-44d2-b5cf-65492341b08a?format=jpeg')]">
   <div class="flex justify-center mt-4">
-      <nav class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8 text- p-2 bg-opacity-60 border-pink-400 border bg-white rounded-lg">
-        <h3 class="font-bold text-xl text-pink-400">Kätlin .E</h3>
+      <nav class="flex flex-col md:flex-row items-center text-[#c19cbb]  space-y-4 md:space-y-0 md:space-x-8 text- p-2 bg-opacity-60 border-[#b1c9d4] border bg-white rounded-lg">
+        <h3 class="font-bold text-xl text-[#c19cbb]">Kätlin .E</h3>
         <a href="#services" class="hover:underline hover:text-pink-400">Services</a>
         <a href="#work" class="hover:text-pink-400 hover:underline">Work</a>
         <a href="#about" class="hover:text-pink-400 hover:underline">About</a>
