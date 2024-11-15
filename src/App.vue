@@ -1,33 +1,34 @@
 <template>
   <div>
-    <Navbar />
-    <SkillsSection />
-    <ServicesSection />
-    <ProcessSection />
+    <Home />
+    <Skills />
+    <Services />
     <Timeline />
-    <ClientTestimonials />
-    <About /> 
+    <Testimonials />
+    <About />
+    <Contact />
   </div>
+  <router-view></router-view>
 </template>
 
 <script>
-import Navbar from './components/navbar.vue';
-import SkillsSection from './components/skillsSection.vue';
-import ServicesSection from './components/servicesSection.vue';
-import ProcessSection from './components/processSection.vue';
+import Home from './components/Home.vue';
+import Skills from './components/Skills.vue';
+import Services from './components/Services.vue';
 import Timeline from './components/Timeline.vue';
-import ClientTestimonials from './components/ClientTestimonials.vue';
+import Testimonials from './components/Testimonials.vue';
 import About from './components/About.vue';
+import Contact from './components/Contact.vue';
 export default {
   name: 'App',
   components: {
-    Navbar,
-    SkillsSection,
-    ServicesSection,
-    ProcessSection,
+    Home,
+    Skills,
+    Services,
     Timeline,
-    ClientTestimonials,
+    Testimonials,
     About,
+    Contact,
   },
 };
 </script>
