@@ -3,8 +3,8 @@ import './style.css';
 import App from './App.vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
-import Contact from './components/Contact.vue';
 import Home from './components/Home.vue';
+import Contact from './components/Contact.vue';
 
 const routes = [
   {
@@ -20,7 +20,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(),
   routes,
 });
 

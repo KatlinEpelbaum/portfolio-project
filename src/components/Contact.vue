@@ -51,6 +51,7 @@
     </section>
   </template>
   
+  
   <script>
   import Header from './Header.vue';
   
