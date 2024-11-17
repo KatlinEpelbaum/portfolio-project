@@ -10,7 +10,7 @@ export default {
         '42': '46rem', 
       },
       width : {
-        '42' : '38rem',
+        '42': '38rem',
       },
       boxShadow: {
         'shadow1': 'rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px',
@@ -18,20 +18,16 @@ export default {
         'shadow3': 'rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px',
       },
       animation: {
-        swirl: 'swirl 2s infinite',
+        marquee: 'marquee 20s linear infinite',
       },
       keyframes: {
-        swirl: {
-          '0%': {
-            color: 'rgb(244 114 182)',
-          },
-          '50%': {
-            color: 'rgb(14 116 144)', 
-          },
-          '100%': {
-            color: 'rgb(244 114 182)', 
-          },
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
         },
+      },
+      spacing: {
+        '19': '75px', 
       },
     },
   },

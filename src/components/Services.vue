@@ -1,7 +1,7 @@
 <template>
-  <section class="flex flex-row space-x-6 pl-12 pr-12 pb-10 text-slate-800">
+  <section class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 px-6 md:px-12 py-10 text-slate-800">
     <!-- Service Card 1: Web Design -->
-    <div :class="['flex flex-col bg-white p-6 rounded-lg shadow-lg border-2 border-[#c38aba]', 'shadow-shadow1']">
+    <div class="flex flex-col bg-white p-6 rounded-lg  border-2 border-[#c38aba] md:shadow-shadow1">
       <p class="text-3xl font-bold text-cyan-700" style="font-family: 'Nippo', sans-serif;">01</p>
       <h2 class="text-2xl font-semibold text-pink-400 mt-2">Web Design</h2>
       <p class="mt-4 text-gray-700">Visually stunning web designs that captivate your audience by blending your brand voice and customer needs.</p>
@@ -13,7 +13,7 @@
     </div>
 
     <!-- Service Card 2: Development -->
-    <div :class="['flex flex-col bg-white p-6 rounded-lg shadow-lg border-2 border-[#c38aba]', 'shadow-shadow2']">
+    <div class="flex flex-col bg-white p-6 rounded-lg  border-2 border-[#c38aba] md:shadow-shadow2">
       <p class="text-3xl font-bold text-cyan-700" style="font-family: 'Nippo', sans-serif;">02</p>
       <h2 class="text-2xl font-semibold text-pink-400 mt-2">Development</h2>
       <p class="mt-4 text-gray-700">Get custom web development solutions that are tailored to your specifications, designed to deliver a flawless user experience.</p>
@@ -25,7 +25,7 @@
     </div>
 
     <!-- Service Card 3: SEO Optimization -->
-    <div :class="['flex flex-col bg-white p-6 rounded-lg shadow-lg border-2 border-[#c38aba]', 'shadow-shadow3']">
+    <div class="flex flex-col bg-white p-6 rounded-lg  border-2 border-[#c38aba] md:shadow-shadow3">
       <p class="text-3xl font-bold text-cyan-700" style="font-family: 'Nippo', sans-serif;">03</p>
       <h2 class="text-2xl font-semibold text-pink-400 mt-2">SEO Optimization</h2>
       <p class="mt-4 text-gray-700">Proven SEO strategies that enhance your online performance, bringing you to the forefront of organic search results.</p>
@@ -37,6 +37,3 @@
     </div>
   </section>
 </template>
-
-
-

@@ -1,6 +1,6 @@
 <template>
     <section class="flex flex-col h-screen bg-[url(./src/img/background2.png)] bg-center">
-        <Header />
+      <Header />
       <div class="flex flex-1 justify-between items-center p-4 mb-40">
         <div class="flex flex-col justify-center items-start flex-1 p-6 space-y-4">
             <h1 class="text-6xl font-semibold italic text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-cyan-700">Get in Touch</h1>

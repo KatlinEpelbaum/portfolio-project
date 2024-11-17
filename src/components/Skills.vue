@@ -1,17 +1,30 @@
 <template>
-  <section class="flex flex-col p-20">
-    <div class="flex flex-row justify-between px-12">
-      <i 
-        v-for="skill in skills" 
-        :key="skill" 
-        :class="[ 
-          `devicon-${skill}-plain`,
-          'text-8xl',
-          'animate-swirl',  
-          'transition-colors',  
-          'duration-1000'       
-        ]"
-      ></i>
+  <section class="flex flex-col p-6 md:p-20">
+    <div class="relative overflow-hidden">
+      <div class="flex animate-marquee w-max">
+        <div class="flex">
+          <i
+            v-for="skill in skills"
+            :key="skill"
+            :class="[ 
+              `devicon-${skill}-plain`,
+              'text-6xl md:text-8xl text-pink-400',
+              'mx-8'  
+            ]"
+          ></i>
+        </div>
+        <div class="flex">
+          <i
+            v-for="skill in skills"
+            :key="'repeat-' + skill"
+            :class="[ 
+              `devicon-${skill}-plain`,
+              'text-6xl md:text-8xl text-pink-400',
+              'mx-8'  
+            ]"
+          ></i>
+        </div>
+      </div>
     </div>
   </section>
 </template>

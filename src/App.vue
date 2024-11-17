@@ -7,8 +7,8 @@
     <Testimonials />
     <About />
     <Contact />
+    <letsTalk />
   </div>
-  <router-view></router-view>
 </template>
 
 <script>
@@ -19,6 +19,7 @@ import Timeline from './components/Timeline.vue';
 import Testimonials from './components/Testimonials.vue';
 import About from './components/About.vue';
 import Contact from './components/Contact.vue';
+import letsTalk from './components/letsTalk.vue';
 export default {
   name: 'App',
   components: {
@@ -29,6 +30,7 @@ export default {
     Testimonials,
     About,
     Contact,
+    letsTalk,
   },
 };
 </script>

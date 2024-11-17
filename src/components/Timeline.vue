@@ -1,173 +1,139 @@
 <template>
-    <!-- Process Section Header -->
-    <section class="flex flex-col items-center p-10">
-      <div class="text-center">
-        <p class="font-semibold text-slate-700">The Process</p>
-        <h1 class="text-8xl pb-4 text-slate-700">
-          Your Website <br><span 
-            style="font-family: 'Nippo', sans-serif;" 
-            class="italic bg-gradient-to-r from-cyan-700 via-pink-400 to-[#c38aba] text-transparent bg-clip-text">
-            in 5 steps
-          </span>
-        </h1>
-        <p class="font-semibold text-slate-700">
-          Our process ensures that we create a website <br> tailored to your business needs.
-        </p>
-      </div>
-    </section>
-  
-    <!-- Step-by-Step Process -->
-    <section class="pl-32 pr-32 pb-8">
-      <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-700 before:to-transparent">
-        
-        <!-- Step 1: Discovery Call -->
-        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-          <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-gradient-to-r group-[.is-active]:bg-gradient-to-l from-pink-400 to-cyan-700 group-[.is-active]:from-pink-500 group-[.is-active]:to-cyan-700 text-slate-700 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+  <section class="flex flex-col items-center p-10 text-slate-700 ">
+    <div class="text-center">
+      <p class="font-semibold ">The Process</p>
+      <h1 class="text-5xl md:text-8xl pb-4">
+        Your Website <br><span 
+          style="font-family: 'Nippo', sans-serif;" 
+          class="italic bg-gradient-to-r from-cyan-500 via-pink-400 to-purple-500 text-transparent bg-clip-text">
+          in 5 steps
+        </span>
+      </h1>
+      <p class="font-semibold ">
+        Our process ensures that we create a website <br> tailored to your business needs.
+      </p>
+    </div>
+  </section>
+
+  <section class="relative pl-10 pr-10 pb-8 md:pl-32 md:pr-32 text-slate-700">
+    <div class="relative space-y-16 before:absolute before:inset-0 before:mx-auto before:w-0.5 before:bg-gradient-to-b from-gray-100 via-pink-400 to-gray-100">
+
+      <!-- Step 1: Discovery Call -->
+      <div class="relative md:flex md:items-start md:space-x-8">
+        <div class="flex justify-center md:ml-19 md:justify-end md:w-1/2">
+          <div class="relative flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-pink-500 to-cyan-500 text-white shadow">
             1
           </div>
-          <!-- Card -->
-          <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-slate-50 p-6 rounded-lg border border-pink-400 shadow-md">
-            <div class="flex justify-between items-end mb-4">
-              <p class="uppercase tracking-wider text-xs font-bold text-pink-400">Do we match?</p>
-              <div class="bg-pink-400 text-white text-xs px-3 py-1 rounded-full">2 hours</div>
-            </div>
-            <h2 class="text-2xl font-bold text-slate-800">Discovery Call</h2>
-            <p class="mt-4 leading-relaxed text-slate-700">
+        </div>
+        <div class="relative w-full md:w-1/2 mt-6 md:mt-0 md:pl-10">
+          <div class="p-6 border border-gray-900 text-lg rounded-lg shadow bg-white">
+            <p class="uppercase tracking-wider text-xs font-bold text-pink-400 mb-2">Do we match?</p>
+            <h2 class="text-2xl font-bold mb-4">Discovery Call</h2>
+            <p class="mb-4 ">
               Before we start, we determine if and how I can help you. What are your requirements for your new website? 
               Why do you need a new website? What goals do you have, and what problems can we solve with a new website?
             </p>
-            <ul class="mt-4 space-y-2">
-              <li class="flex items-center">
-                <span class="inline-block w-2 h-2 bg-pink-400 rounded-full mr-2"></span> We get to know each other better
-              </li>
-              <li class="flex items-center">
-                <span class="inline-block w-2 h-2 bg-pink-400 rounded-full mr-2"></span> Determine how I can best assist you
-              </li>
-              <li class="flex items-center">
-                <span class="inline-block w-2 h-2 bg-pink-400 rounded-full mr-2"></span> Understand the goals you have for your website
-              </li>
+            <ul class="space-y-2">
+              <li>We get to know each other better</li>
+              <li>Determine how I can best assist you</li>
+              <li>Understand the goals you have for your website</li>
             </ul>
           </div>
         </div>
-  
-        <!-- Step 2: Concept & Strategy -->
-        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-          <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-gradient-to-r group-[.is-active]:bg-gradient-to-l from-pink-400 to-cyan-700 group-[.is-active]:from-pink-500 group-[.is-active]:to-cyan-700 text-slate-700 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+      </div>
+
+      <!-- Step 2: Concept & Strategy -->
+      <div class="relative md:flex md:items-start md:space-x-8 md:flex-row-reverse">
+        <div class="flex justify-center md:mr-19 md:justify-start md:w-1/2">
+          <div class="relative flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-pink-500 to-cyan-500 text-white shadow">
             2
           </div>
-          <!-- Card -->
-          <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-slate-50 p-6 rounded-lg border border-pink-400 shadow-md">
-            <div class="flex justify-between items-end mb-4">
-              <p class="uppercase tracking-wider text-xs font-bold text-pink-400">Strategy</p>
-              <div class="bg-pink-400 text-white text-xs px-3 py-1 rounded-full">1 Week</div>
-            </div>
-            <h2 class="text-2xl font-bold text-slate-800">Concept & Strategy</h2>
-            <p class="mt-4 leading-relaxed text-slate-700">
+        </div>
+        <div class="relative w-full md:w-1/2 mt-6 md:mt-0 md:pr-10">
+          <div class="p-6  border border-gray-900 rounded-lg shadow bg-white">
+            <p class="uppercase tracking-wider text-xs font-bold text-pink-400 mb-2">Strategy</p>
+            <h2 class="text-2xl font-bold mb-4">Concept & Strategy</h2>
+            <p class="mb-4 ">
               Together, we develop a strategy that successfully combines your goals with the needs of your target audience. 
-              Based on this concept, I create the first wireframes and an interactive prototype. This gives us a great impression of the website and the user interface.
+              Based on this concept, I create the first wireframes and an interactive prototype.
             </p>
-            <ul class="mt-4 space-y-2">
-              <li class="flex items-center">
-                <span class="inline-block w-2 h-2 bg-pink-400 rounded-full mr-2"></span> UX Design
-              </li>
-              <li class="flex items-center">
-                <span class="inline-block w-2 h-2 bg-pink-400 rounded-full mr-2"></span> Wireframes
-              </li>
-              <li class="flex items-center">
-                <span class="inline-block w-2 h-2 bg-pink-400 rounded-full mr-2"></span> Interactive Prototype
-              </li>
+            <ul class="space-y-2 ">
+              <li>UX Design</li>
+              <li>Wireframes</li>
+              <li>Interactive Prototype</li>
             </ul>
           </div>
         </div>
-  
-        <!-- Step 3: Web Design -->
-        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-          <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-gradient-to-r group-[.is-active]:bg-gradient-to-l from-pink-400 to-cyan-700 group-[.is-active]:from-pink-500 group-[.is-active]:to-cyan-700 text-slate-700 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+      </div>
+
+      <!-- Step 3: Web Design -->
+      <div class="relative md:flex md:items-start md:space-x-8">
+        <div class="flex md:ml-19 justify-center md:justify-end md:w-1/2">
+          <div class="relative flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-pink-500 to-cyan-500 text-white shadow">
             3
           </div>
-          <!-- Card -->
-          <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-slate-50 p-6 rounded-lg border border-pink-400 shadow-md">
-            <div class="flex justify-between items-end mb-4">
-              <p class="uppercase tracking-wider text-xs font-bold text-pink-400">Design</p>
-              <div class="bg-pink-400 text-white text-xs px-3 py-1 rounded-full">1 Week</div>
-            </div>
-            <h2 class="text-2xl font-bold text-slate-800">Web Design</h2>
-            <p class="mt-4 leading-relaxed text-slate-700">
+        </div>
+        <div class="relative w-full md:w-1/2 mt-6 md:mt-0 md:pl-10">
+          <div class="p-6  border border-gray-900 bg-white rounded-lg shadow">
+            <p class="uppercase tracking-wider text-xs font-bold text-pink-400 mb-2">Design</p>
+            <h2 class="text-2xl font-bold mb-4">Web Design</h2>
+            <p class="mb-4">
               Now comes the magic! Based on the previously developed concept, I create a high-end screen design tailored to your brand.
-              A web design that sets you apart from your competition, fits your target audience, and provides an excellent user experience.
             </p>
-            <ul class="mt-4 space-y-2">
-              <li class="flex items-center">
-                <span class="inline-block w-2 h-2 bg-pink-400 rounded-full mr-2"></span> High-end web design tailored to your brand
-              </li>
-              <li class="flex items-center">
-                <span class="inline-block w-2 h-2 bg-pink-400 rounded-full mr-2"></span> Interactive prototype of the design
-              </li>
+            <ul class="space-y-2 ">
+              <li>High-end web design tailored to your brand</li>
+              <li>Interactive prototype of the design</li>
             </ul>
           </div>
         </div>
-  
-        <!-- Step 4: Development -->
-        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-          <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-gradient-to-r group-[.is-active]:bg-gradient-to-l from-pink-400 to-cyan-700 group-[.is-active]:from-pink-500 group-[.is-active]:to-cyan-700 text-slate-700 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+      </div>
+
+      <!-- Step 4: Development -->
+      <div class="relative md:flex md:items-start md:space-x-8 md:flex-row-reverse">
+        <div class="flex md:mr-19 justify-center md:justify-start md:w-1/2">
+          <div class="relative flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-pink-500 to-cyan-500 text-white shadow">
             4
           </div>
-          <!-- Card -->
-          <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-slate-50 p-6 rounded-lg border border-pink-400 shadow-md">
-            <div class="flex justify-between items-end mb-4">
-              <p class="uppercase tracking-wider text-xs font-bold text-pink-400">More Magic</p>
-              <div class="bg-pink-400 text-white text-xs px-3 py-1 rounded-full">2 Week</div>
-            </div>
-            <h2 class="text-2xl font-bold text-slate-800">Development</h2>
-            <p class="mt-4 leading-relaxed text-slate-700">
-              In this step, we breathe life into your high-end design. You will receive a custom-built website using a modular web design system and CMS integration.
-              Animations will add the necessary flair to your site and set you apart from the competition.
+        </div>
+        <div class="relative w-full md:w-1/2 mt-6 md:mt-0 md:pr-10">
+          <div class="p-6  border border-gray-900 bg-white rounded-lg shadow">
+            <p class="uppercase tracking-wider text-xs font-bold text-pink-400 mb-2">More Magic</p>
+            <h2 class="text-2xl font-bold mb-4">Development</h2>
+            <p class="mb-4 ">
+              In this step, we breathe life into your website. I translate the web design into code, ensuring responsiveness and functionality.
             </p>
-            <ul class="mt-4 space-y-2">
-              <li class="flex items-center">
-                <span class="inline-block w-2 h-2 bg-pink-400 rounded-full mr-2"></span> Custom-built website
-              </li>
-              <li class="flex items-center">
-                <span class="inline-block w-2 h-2 bg-pink-400 rounded-full mr-2"></span> Modular web design systems
-              </li>
-              <li class="flex items-center">
-                <span class="inline-block w-2 h-2 bg-pink-400 rounded-full mr-2"></span> CMS integration
-              </li>
+            <ul class="space-y-2 ">
+              <li>Responsive coding for all devices</li>
+              <li>Functional website with interactive elements</li>
+              <li>Testing and quality assurance</li>
             </ul>
           </div>
         </div>
-  
-        <!-- Step 5: Website Onboarding -->
-        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-          <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-gradient-to-r group-[.is-active]:bg-gradient-to-l from-pink-400 to-cyan-700 group-[.is-active]:from-pink-500 group-[.is-active]:to-cyan-700 text-slate-700 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+      </div>
+
+      <!-- Step 5: Launch & Support -->
+      <div class="relative md:flex md:items-start md:space-x-8">
+        <div class="flex md:ml-19 justify-center md:justify-end md:w-1/2">
+          <div class="relative flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-pink-500 to-cyan-500 text-white shadow">
             5
           </div>
-          <!-- Card -->
-          <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-slate-50 p-6 rounded-lg border border-pink-400 shadow-md">
-            <div class="flex justify-between items-end mb-4">
-              <p class="uppercase tracking-wider text-xs font-bold text-pink-400">Ready to go</p>
-              <div class="bg-pink-400 text-white text-xs px-3 py-1 rounded-full">2 Hours</div>
-            </div>
-            <h2 class="text-2xl font-bold text-slate-800">Website Onboarding</h2>
-            <p class="mt-4 leading-relaxed text-slate-700">
-              In a personal Framer workshop, I will show you how to make changes to your new website quickly and easily.
-              Additionally, you will receive personalized Framer video tutorials that you can access at any time.
+        </div>
+        <div class="relative w-full md:w-1/2 mt-6 md:mt-0 md:pl-10">
+          <div class="p-6 border-gray-900 border bg-white rounded-lg shadow">
+            <p class="uppercase tracking-wider text-xs font-bold text-pink-400 mb-2">Final Step</p>
+            <h2 class="text-2xl font-bold mb-4">Launch & Support</h2>
+            <p class="mb-4">
+              It's time to go live! I deploy your website and provide ongoing support to ensure it runs smoothly and securely. 
+              We also monitor and analyze the site to make improvements based on real user data.
             </p>
-            <ul class="mt-4 space-y-2">
-              <li class="flex items-center">
-                <span class="inline-block w-2 h-2 bg-pink-400 rounded-full mr-2"></span> Personal workshop
-              </li>
-              <li class="flex items-center">
-                <span class="inline-block w-2 h-2 bg-pink-400 rounded-full mr-2"></span> Personalized video tutorials
-              </li>
-              <li class="flex items-center">
-                <span class="inline-block w-2 h-2 bg-pink-400 rounded-full mr-2"></span> Edit text and images directly on your website
-              </li>
+            <ul class="space-y-2">
+              <li>Website launch</li>
+              <li>Post-launch monitoring and optimization</li>
+              <li>Ongoing support and updates</li>
             </ul>
           </div>
         </div>
-        
       </div>
-    </section>
-  </template>
-  
+    </div>
+  </section>
+</template>
