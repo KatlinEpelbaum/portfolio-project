@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       height: {
-        '42': '46rem', 
+        '42': '48rem', 
       },
       width : {
         '42': '38rem',
@@ -29,6 +29,11 @@ export default {
       spacing: {
         '19': '75px', 
       },
+      width: {
+        '100': '400px',
+        '101': '300px',
+      },
+      
     },
   },
   plugins: [],
