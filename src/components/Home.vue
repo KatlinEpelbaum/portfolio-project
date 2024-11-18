@@ -1,18 +1,23 @@
 <template>
   <section class="flex flex-col h-screen bg-[url(./src/img/background.jpg)] bg-cover bg-center">
     <div class="flex flex-row justify-center items-center flex-grow">
-      <h1 class="text-white text-6xl md:text-9xl text-center mb-6 ">
-        <span class="inline-block " style="font-family: 'Nippo', sans-serif;">
-          Web Designer
-        </span> & 
-        <span class="inline-block" style="font-family: 'Nippo', sans-serif;">
-          Developer
-        </span>
+      <h1 class="text-white text-6xl md:text-9xl text-center mb-6">
+        <span class="inline-block" style="font-family: 'Nippo', sans-serif;">Web Designer</span>
+         & 
+        <span class="inline-block" style="font-family: 'Nippo', sans-serif;">Developer</span>
       </h1>
+    </div>
+    <div class="flex justify-center pb-20 mt-10 animate-bounce">
+        <a href="#skills" class="flex flex-col items-center text-white space-y-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-10 h-10" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 1.5a.5.5 0 0 1 .5.5v10.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 12.793V2a.5.5 0 0 1 .5-.5z"/>
+          </svg>
+          <span class="text-lg font-semibold">See More</span>
+        </a>
     </div>
   </section>
       <!-- Skills -->
-  <section class="flex flex-col p-6 md:p-20">
+  <section id="skills" class="flex flex-col p-6 md:p-20">
     <div class="relative overflow-hidden">
       <div class="flex animate-marquee w-max">
         <div class="flex">
@@ -439,7 +444,7 @@
           <span class="text-pink-400 italic">Website</span> shine
         </h1>
         <p class="mt-6 text-xl text-slate-700 max-w-xl mx-auto pb-20">
-        Premium web design, Webflow, and SEO services to help your business stand out and make an impact.
+        Premium web design, and development services to help your business stand out and make an impact.
         </p>
         <router-link
           to="/contact"
