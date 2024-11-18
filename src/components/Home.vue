@@ -427,16 +427,16 @@
         </div>
     </section>
     <section class="text-white  flex flex-col justify-between bg-gradient-to-b from-white to-pink-300">
-    <div class="text-center py-20 px-6">
-      <p class="uppercase tracking-widest text-slate-800 text-xl">Project in Mind?</p>
-      <h1 class="text-4xl md:text-7xl font-semibold mt-4 text-slate-900">
+      <div class="text-center py-20 px-6">
+        <p class="uppercase tracking-widest text-slate-800 text-xl">Project in Mind?</p>
+        <h1 class="text-4xl md:text-7xl font-semibold mt-4 text-slate-900">
         Let's make your <br>
-        <span class="text-pink-400 italic">Website</span> shine
-      </h1>
-      <p class="mt-6 text-xl text-slate-700 max-w-xl mx-auto pb-20">
+          <span class="text-pink-400 italic">Website</span> shine
+        </h1>
+        <p class="mt-6 text-xl text-slate-700 max-w-xl mx-auto pb-20">
         Premium web design, Webflow, and SEO services to help your business stand out and make an impact.
-      </p>
-      <router-link
+        </p>
+        <router-link
           to="/contact"
           class="mt-8 px-8 py-4 bg-pink-400 hover:bg-pink-500 font-light rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
         >
