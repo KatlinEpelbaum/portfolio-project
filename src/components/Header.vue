@@ -45,7 +45,7 @@
           {{ link.name }}
         </router-link>
 
-        <button @click="navigateToContact" class="flex items-center text-pink-400 font-bold p-2 rounded-xl hover:underline">
+        <button @click="navigateToContact" class="flex items-center text-pink-400 font-bold md:p-2 rounded-xl hover:underline">
           Let's talk
         </button>
       </div>
@@ -60,9 +60,9 @@ export default {
     return {
       links: [
         { name: 'Home', href: '/' },  
-        { name: 'Work', href: '#work' },
-        { name: 'About', href: '#about' },
-        { name: 'Pages', href: '#pages' },
+        { name: 'Work', href: '/work' },
+        { name: 'About', href: '/about' },
+        { name: 'Pages', href: '/pages' },
       ],
       isMenuOpen: false,
     };

@@ -1,16 +1,15 @@
 <template>
-      <!-- Home -->
-    <section id="home" class="flex flex-col h-screen bg-[url(./src/img/background.jpg)] bg-cover bg-center">
-        <div class="flex flex-row justify-center items-center flex-grow">
-            <h1 class="text-white text-6xl md:text-9xl text-center mb-6 animate__animated animate__fadeIn animate__delay-1s">
-                <span class="inline-block" style="font-family: 'Nippo', sans-serif;">
-                Web Designer
-                </span> & 
-                <span class="inline-block" style="font-family: 'Nippo', sans-serif;">
-                Developer
-                </span>
-            </h1>
-        </div>
+  <section class="flex flex-col h-screen bg-[url(./src/img/background.jpg)] bg-cover bg-center">
+    <div class="flex flex-row justify-center items-center flex-grow">
+      <h1 class="text-white text-6xl md:text-9xl text-center mb-6 ">
+        <span class="inline-block " style="font-family: 'Nippo', sans-serif;">
+          Web Designer
+        </span> & 
+        <span class="inline-block" style="font-family: 'Nippo', sans-serif;">
+          Developer
+        </span>
+      </h1>
+    </div>
   </section>
       <!-- Skills -->
   <section class="flex flex-col p-6 md:p-20">
@@ -357,48 +356,48 @@
       <!-- Mobile Menu -->
 
     <section>
-        <div class="relative bg-white text-slate-800 font-sans pb-8">
-            <!-- Header Section -->
-            <div class="flex flex-col md:flex-row justify-between items-center flex-wrap p-10">
-              <!-- Main Title -->
-              <h1 class="text-6xl md:text-8xl font-serif hidden md:block mt-20 md:mt-60">
-                  Kätlin
-              </h1>
+      <div class="relative bg-white text-slate-800 font-sans pb-8">
+        <!-- Header Section -->
+        <div class="flex items-center justify-between flex-wrap p-10">
+          <!-- First Text on the Left -->
+          <h1 class="text-6xl md:text-8xl font-serif mt-20 md:mt-60 hidden md:block md:flex-1">
+            Kätlin
+          </h1>
 
-              <!-- Profile Image -->
-              <img
-                  class="h-32 w-32 md:h-42 md:w-42 rounded-full object-cover mx-auto mt-6 md:mt-0"
-                  src="/src/img/flower.jpg"
-                  alt="Flower"
-              />
+          <!-- Profile Image in the Center -->
+          <div class="flex justify-center md:w-42 w-30 mx-auto mt-6 md:mt-0 md:mx-0">
+            <img
+              class="w-30 md:h-42 md:w-42"
+              src="/src/img/flower.jpg"
+              alt="Flower"
+            />
+          </div>
 
-              <!-- Full Name -->
-              <h1 class="text-6xl md:text-8xl font-serif mt-20 md:mt-60 text-center md:text-left">
-                  Kätlin
-                  <span
-                  style="font-family: 'Nippo', sans-serif;"
-                  class="italic text-transparent pr-4 bg-clip-text bg-gradient-to-r from-pink-400 to-cyan-700">
-                  Epelbaum
-                  </span>
-              </h1>
-            </div>
-
+          <!-- Second Text on the Right -->
+          <h1 class="text-6xl md:text-8xl font-serif mt-20 md:mt-60 text-center md:text-left md:flex-1">
+            Kätlin
+            <span
+              style="font-family: 'Nippo', sans-serif;"
+              class="italic text-transparent pr-4 bg-clip-text bg-gradient-to-r from-pink-400 to-cyan-700">
+              Epelbaum
+            </span>
+          </h1>
+        </div>
             <!-- Description Section -->
-            <div class="max-w-7xl mx-auto mt-16 px-6 md:px-10">
-            <div class="flex flex-col md:flex-row items-center md:items-end">
+        <div class="max-w-7xl mx-auto mt-16 px-6 md:px-10">
+          <div class="flex flex-col md:flex-row items-center md:items-end">
                 <!-- Left Column -->
-                <div class="md:w-1/2 flex flex-col justify-center text-center md:text-right mb-6 md:mb-12 pr-0 md:pr-8 md:border-r-8 border-cyan-700">
+              <div class="md:w-1/2 flex flex-col justify-center text-center md:text-right mb-6 md:mb-12 pr-0 md:pr-8 md:border-r-8 border-cyan-700">
                 <h2 class="text-2xl md:text-3xl font-light">
-                    A website that leaves <br />
-                    <span class="italic font-bold">a lasting impression!</span>
+                  A website that leaves <br />
+                  <span class="italic font-bold">a lasting impression!</span>
                 </h2>
-                </div>
-
+              </div>
                 <!-- Vertical Divider (Only for Desktop) -->
-                <div class="hidden md:block border-l border-gray-300 h-full mx-4"></div>
+              <div class="hidden md:block border-l border-gray-300 h-full mx-4"></div>
 
                 <!-- Right Column -->
-                <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left mt-6 md:mt-0">
+              <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left mt-6 md:mt-0">
                 <p class="max-w-2xl mx-auto text-gray-700 text-base md:text-lg leading-relaxed">
                     Hi, I'm Kätlin Epelbaum - a freelancer specializing in premium web
                     design, development, and SEO services. I'm passionate about creating
@@ -410,21 +409,21 @@
                 <!-- Social Media Icons -->
                 <div class="flex justify-center md:justify-start gap-6 mt-6">
                     <a href="#" class="text-gray-500 hover:text-black transition">
-                    <i class="fab fa-facebook fa-2x"></i>
+                      <i class="fab fa-facebook fa-2x"></i>
                     </a>
                     <a href="#" class="text-gray-500 hover:text-black transition">
-                    <i class="fab fa-instagram fa-2x"></i>
+                      <i class="fab fa-instagram fa-2x"></i>
                     </a>
                     <a href="#" class="text-gray-500 hover:text-black transition">
-                    <i class="fab fa-github fa-2x"></i>
+                      <i class="fab fa-github fa-2x"></i>
                     </a>
                     <a href="#" class="text-gray-500 hover:text-black transition">
-                    <i class="fab fa-linkedin fa-2x"></i>
+                      <i class="fab fa-linkedin fa-2x"></i>
                     </a>
                 </div>
-                </div>
+              </div>
             </div>
-            </div>
+          </div>
         </div>
     </section>
     <section class="text-white  flex flex-col justify-between bg-gradient-to-b from-white to-pink-300">

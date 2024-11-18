@@ -6,6 +6,7 @@ import 'animate.css';
 
 import Home from './components/Home.vue';
 import Contact from './components/Contact.vue';
+import About from './components/About.vue';
 
 // Define routes
 const routes = [
@@ -18,6 +19,11 @@ const routes = [
     path: '/contact', 
     name: 'contact',
     component: Contact, 
+  },
+  {
+    path: '/about', 
+    name: 'about',
+    component: About, 
   },
 ];
 
