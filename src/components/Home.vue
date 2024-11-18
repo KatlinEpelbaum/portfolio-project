@@ -363,7 +363,6 @@
         </div>
     </section>
       <!-- Mobile Menu -->
-
     <section>
       <div class="relative bg-white text-slate-800 font-sans pb-8">
         <!-- Header Section -->
@@ -409,7 +408,7 @@
               <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left mt-6 md:mt-0">
                 <p class="max-w-2xl mx-auto text-gray-700 text-base md:text-lg leading-relaxed">
                     Hi, I'm Kätlin Epelbaum - a freelancer specializing in premium web
-                    design, development, and SEO services. I'm passionate about creating
+                    design and development. I'm passionate about creating
                     unique and effective solutions for my clients, and I bring a personal
                     touch to every project. Let's work together to bring your vision to
                     life!
@@ -417,16 +416,13 @@
 
                 <!-- Social Media Icons -->
                 <div class="flex justify-center md:justify-start gap-6 mt-6">
-                    <a href="#" class="text-gray-500 hover:text-black transition">
+                    <a href="https://www.facebook.com/katlin.epelbaum/" class="text-gray-500 hover:text-black transition">
                       <i class="fab fa-facebook fa-2x"></i>
                     </a>
-                    <a href="#" class="text-gray-500 hover:text-black transition">
-                      <i class="fab fa-instagram fa-2x"></i>
-                    </a>
-                    <a href="#" class="text-gray-500 hover:text-black transition">
+                    <a href="https://github.com/KatlinEpelbaum" class="text-gray-500 hover:text-black transition">
                       <i class="fab fa-github fa-2x"></i>
                     </a>
-                    <a href="#" class="text-gray-500 hover:text-black transition">
+                    <a href="https://www.linkedin.com/in/kätlin-epelbaum-138653339/" class="text-gray-500 hover:text-black transition">
                       <i class="fab fa-linkedin fa-2x"></i>
                     </a>
                 </div>

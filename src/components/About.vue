@@ -27,7 +27,7 @@
         </div>
       </div>
 
-      <div class="flex justify-center md:w-1/2 mx-auto mt-6 md:mt-0 md:mx-0 relative z-10">
+      <div class="flex justify-center md:w-1/2 mx-auto mt-6 md:mt-10 md:mx-0 relative z-10">
         <img
           class="w-32 sm:w-40 md:w-60 lg:w-72 rounded-lg shadow-lg transform rotate-3 transition-all duration-500 hover:scale-110"
           src="/src/img/pebbles.png"
