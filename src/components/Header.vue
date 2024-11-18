@@ -60,7 +60,7 @@ export default {
     return {
       links: [
         { name: 'Home', href: '/' },  
-        { name: 'Work', href: '/work' },
+        { name: 'Services', href: '/Services' },
         { name: 'About', href: '/about' },
         { name: 'Pages', href: '/pages' },
       ],

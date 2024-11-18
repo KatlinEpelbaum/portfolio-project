@@ -115,15 +115,15 @@
             </p>
             <ul class="space-y-3 text-gray-700">
               <li class="flex items-start">
-                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3"></span>
+                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3 mt-1"></span>
                 <span>We get to know each other better</span>
               </li>
               <li class="flex items-start">
-                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3"></span>
+                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3 mt-1"></span>
                 <span>Determine how I can best assist you</span>
               </li>
               <li class="flex items-start">
-                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3"></span>
+                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3 mt-1"></span>
                 <span>Understand the goals you have for your website</span>
               </li>
             </ul>
@@ -147,15 +147,15 @@
             </p>
             <ul class="space-y-3 text-gray-700">
               <li class="flex items-start">
-                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3"></span>
+                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3 mt-1"></span>
                 <span>UX Design</span>
               </li>
               <li class="flex items-start">
-                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3"></span>
+                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3 mt-1"></span>
                 <span>Wireframes</span>
               </li>
               <li class="flex items-start">
-                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3"></span>
+                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3 mt-1"></span>
                 <span>Interactive Prototype</span>
               </li>
             </ul>
@@ -179,11 +179,11 @@
             </p>
             <ul class="space-y-3 text-gray-700">
               <li class="flex items-start">
-                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3"></span>
+                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3 mt-1"></span>
                 <span>High-end web design tailored to your brand</span>
               </li>
               <li class="flex items-start">
-                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3"></span>
+                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3 mt-1"></span>
                 <span>Interactive prototype of the design</span>
               </li>
             </ul>
@@ -207,15 +207,15 @@
             </p>
             <ul class="space-y-3 text-gray-700">
               <li class="flex items-start">
-                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3"></span>
+                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3 mt-1"></span>
                 <span>Responsive coding for all devices</span>
               </li>
               <li class="flex items-start">
-                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3"></span>
+                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3 mt-1"></span>
                 <span>Functional website with interactive elements</span>
               </li>
               <li class="flex items-start">
-                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3"></span>
+                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3 mt-1"></span>
                 <span>Testing and quality assurance</span>
               </li>
             </ul>
@@ -239,15 +239,15 @@
             </p>
             <ul class="space-y-3 text-gray-700">
               <li class="flex items-start">
-                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3"></span>
+                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3 mt-1"></span>
                 <span>Website launch</span>
               </li>
               <li class="flex items-start">
-                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3"></span>
+                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3 mt-1"></span>
                 <span>Post-launch monitoring and optimization</span>
               </li>
               <li class="flex items-start">
-                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3"></span>
+                <span class="flex-shrink-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-full mr-3 mt-1"></span>
                 <span>Ongoing support and updates</span>
               </li>
             </ul>

@@ -7,7 +7,7 @@ import 'animate.css';
 import Home from './components/Home.vue';
 import Contact from './components/Contact.vue';
 import About from './components/About.vue';
-import Work from './components/Work.vue';
+import Services from './components/Services.vue';
 
 // Define routes
 const routes = [
@@ -27,9 +27,9 @@ const routes = [
     component: About, 
   },
   {
-    path: '/work', 
-    name: 'work',
-    component: Work, 
+    path: '/services', 
+    name: 'services',
+    component: Services, 
   },
 ];
 
