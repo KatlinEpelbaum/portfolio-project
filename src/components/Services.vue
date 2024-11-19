@@ -221,7 +221,7 @@
     </div>
   </section>
 
-  <!-- Call-to-Action Section -->
+  <!-- Contact Section -->
   <section class="text-white flex flex-col justify-between bg-gradient-to-b from-white to-pink-300">
     <div class="text-center py-20 px-6">
       <p class="uppercase tracking-widest text-slate-800 text-xl">Project in Mind?</p>
