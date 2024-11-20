@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col h-screen bg-[url(./src/img/background.jpg)] bg-cover bg-center">
+  <section class="flex flex-col h-screen bg-[url(./src/img/background.webp)] bg-cover bg-center">
     <div class="flex flex-row justify-center items-center flex-grow">
       <h1 class="text-white text-6xl md:text-9xl text-center mb-6">
         <span class="inline-block" style="font-family: 'Nippo', sans-serif;">Web Designer</span>
@@ -333,7 +333,7 @@
           <div class="flex justify-center md:w-42 w-30 mx-auto mt-6 md:mt-0 md:mx-0">
             <img
               class="w-30 md:h-42 md:w-42"
-              src="/src/img/flower.jpg"
+              src="/src/img/flower.webp"
               alt="Flower"
             />
           </div>

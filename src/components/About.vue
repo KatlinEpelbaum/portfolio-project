@@ -30,7 +30,7 @@
       <div class="flex justify-center md:w-1/2 mx-auto mt-6 md:mt-10 md:mx-0 relative z-10">
         <img
           class="w-32 sm:w-40 md:w-60 lg:w-72 rounded-lg shadow-lg transform rotate-3 transition-all duration-500 hover:scale-110"
-          src="/src/img/pebbles.png"
+          src="/src/img/pebbles.webp"
           alt="Pebbles"
         />
         <div class="absolute inset-0 bg-gradient-to-r from-pink-300 to-cyan-500 opacity-40 rounded-full blur-xl -z-10"></div>

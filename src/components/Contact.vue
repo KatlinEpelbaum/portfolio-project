@@ -72,7 +72,7 @@
   </template>
   
   
-  <script>
+<script>
 import emailjs from '@emailjs/browser';
 
 export default {

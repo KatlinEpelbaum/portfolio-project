@@ -23,7 +23,7 @@
             </h2>
             <div class="mt-8 relative">
               <img
-                src="/src/img/Work.png"
+                src="/src/img/Work.webp"
                 alt="A creative and vibrant web design concept illustration"
                 class="w-full rounded-xl shadow-md transform hover:scale-105 transition-transform duration-300"
               />
@@ -84,7 +84,7 @@
             </h2>
             <div class="mt-8 relative">
               <img
-                src="/src/img/Work2.png"
+                src="/src/img/Work2.webp"
                 alt="A creative and vibrant web design concept illustration"
                 class="w-full rounded-xl shadow-md transform hover:scale-105 transition-transform duration-300"
               />
@@ -144,7 +144,7 @@
             </h2>
             <div class="mt-8 relative">
               <img
-                src="/src/img/Work3.png"
+                src="/src/img/Work3.webp"
                 alt="An illustration of a website accessibility audit"
                 class="w-full rounded-xl shadow-md transform hover:scale-105 transition-transform duration-300"
               />
