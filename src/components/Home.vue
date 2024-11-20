@@ -271,7 +271,7 @@
     </div>
   </section>
     <!-- Testimonials -->
-  <section class="py-8 px-4">
+  <section class="px-4">
         <div class="text-center mb-8">
             <h1 class="text-5xl md:text-7xl lg:text-8xl pb-4 text-slate-800">
                 What my <br><span style="font-family: 'Nippo', sans-serif;" class="italic text-pink-400">co-workers say</span>
@@ -281,7 +281,7 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto p-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 max-w-6xl mx-auto p-8">
             <!-- Testimonial 1 -->
             <div class="bg-white p-6 rounded-lg border border-pink-400 shadow-lg">
                 <h2 class="text-xl font-bold text-slate-700 mb-2">
@@ -337,7 +337,7 @@
               alt="Flower"
             />
           </div>
-          <h1 class="text-6xl md:text-8xl font-serif mt-20 md:mt-60 text-center md:text-left md:flex-1">
+          <h1 class="text-6xl pr-6 md:text-8xl font-serif mt-20 md:mt-60 text-center md:text-left md:flex-1">
             Kätlin
             <span
               style="font-family: 'Nippo', sans-serif;"
@@ -348,7 +348,7 @@
         </div>
         <div class="max-w-7xl mx-auto mt-16 px-6 md:px-10">
           <div class="flex flex-col md:flex-row items-center md:items-end">
-              <div class="md:w-1/2 flex flex-col justify-center text-center md:text-right mb-6 md:mb-12 pr-0 md:pr-8 md:border-r-8 border-cyan-700">
+              <div class="md:w-1/2 flex flex-col justify-center text-center md:text-right mb-6 md:mb-12 pr-0 md:pr-8 md:border-r-4 border-cyan-700">
                 <h2 class="text-2xl md:text-3xl font-light">
                   A website that leaves <br />
                   <span class="italic font-bold">a lasting impression!</span>
@@ -392,7 +392,7 @@
         </p>
         <router-link
           to="/contact"
-          class="mt-8 px-8 py-4 bg-pink-400 hover:bg-pink-500 font-light rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
+          class="mt-8 px-8 py-4 bg-pink-400 hover:bg-pink-500 font-semibold rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
         >
           Get In Touch
         </router-link>

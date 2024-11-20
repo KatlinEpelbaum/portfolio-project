@@ -2,9 +2,9 @@
   <section class="bg-gradient-to-b from-cyan-50 to-pink-100 py-16">
     <div class="mx-auto max-w-screen-xl md:px-10 text-center">
       <h1 class="text-4xl md:text-7xl text-slate-800  mb-6 font-bold leading-tight" >
-        Web Design & <br /> Development
+        Web Design &  Development
       </h1>
-      <p class=" text-pink-400 uppercase tracking-widest text-xl">
+      <p class=" text-pink-400 uppercase font-semibold text-xl">
         Crafting beautiful, functional websites with a touch of magic
       </p>
     </div>
@@ -80,7 +80,7 @@
           <div class="relative bg-white border border-pink-200 rounded-3xl shadow-xl p-10 hover:shadow-2xl transition-shadow duration-300">
             <p class="uppercase text-sm font-semibold text-pink-400 tracking-wider mb-4">Development</p>
             <h2 class="text-3xl font-extrabold text-gray-800 leading-tight">
-              Developing High-Performance <br /> Websites and Web Applications
+              Developing High-Performance Websites and Web Applications
             </h2>
             <div class="mt-8 relative">
               <img
@@ -206,7 +206,7 @@
       </p>
       <router-link
         to="/contact"
-        class="mt-8 px-8 py-4 bg-pink-400 hover:bg-pink-500 font-light rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
+        class="mt-8 px-8 py-4 bg-pink-400 hover:bg-pink-500 font-semibold rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
       >
         Get In Touch
       </router-link>

@@ -78,7 +78,7 @@
       </p>
       <router-link
         to="/contact"
-        class="mt-8 px-8 py-4 bg-pink-400 hover:bg-pink-500 font-light rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
+        class="mt-8 px-8 py-4 bg-pink-400 hover:bg-pink-500 font-semibold rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
       >
         Get In Touch
       </router-link>

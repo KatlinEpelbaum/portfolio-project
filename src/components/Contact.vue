@@ -1,37 +1,37 @@
 <template>
     <section class="flex flex-col bg-gradient-to-b from-fuchsia-200 to-pink-100 pb-20 bg-center">
       <div class="flex flex-col md:flex-row justify-center md:justify-around items-center">
-        <div class="flex flex-col justify-center items-start p-8 ">
-            <h1 class="text-6xl font-semibold italic pb-2 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-pink-700">Get in Touch</h1>
-            <p class="text-gray-700 text-xl">I’d love to hear from you! Whether you’re looking for custom software <br> development,a tech consultation, or have any questions about my <br> services, feel free to reach out using the contact form below.</p>
+        <div class="flex flex-col justify-center items-start p-6 ">
+            <h1 class="text-6xl font-semibold italic pb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-pink-700">Get in Touch</h1>
+            <p class="text-gray-700 font-semibold text-lg mb:text-xl">I’d love to hear from you! Whether you’re looking for custom software <br> development,a tech consultation, or have any questions about my <br> services, feel free to reach out using the contact form below.</p>
             <ul class="space-y-4">
             <li>
               <a href="https://www.facebook.com/katlin.epelbaum/" class="flex text-3xl items-center pt-4 space-x-3 text-gray-700 hover:text-pink-500 transition">
                 <i class="fab fa-facebook fa-lg"></i>
-                <span class="text-xl">Facebook</span>
+                <span class="text-lg mb:text-xl">Facebook</span>
               </a>
             </li>
             <li>
               <a href="https://github.com/KatlinEpelbaum" class="flex text-3xl items-center pt-4 space-x-3 text-gray-700 hover:text-pink-500 transition">
                 <i class="fab fa-github fa-lg"></i>
-                <span class="text-xl">Github</span>
+                <span class="text-lg mb:text-xl">Github</span>
               </a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/kätlin-epelbaum-138653339/" class="flex text-3xl items-center pt-4 space-x-3 text-gray-700 hover:text-pink-500 transition">
                 <i class="fab fa-linkedin fa-lg"></i>
-                <span class="text-xl">LinkedIn</span>
+                <span class="text-lg mb:text-xl">LinkedIn</span>
               </a>
             </li>
           </ul>
         </div>
-        <div class="flex justify-center items-center p-16">
-          <form @submit.prevent="submitForm" class="bg-white rounded-lg shadow-lg max-w-sm p-8 w-101 md:w-100 space-y-6">
-            <h2 class="font-bold text-gray-700 text-xl" style="font-family: 'Nippo', sans-serif;">Contact</h2>
-            <h3 class="text-2xl font-bold text-pink-400">Let's get in touch</h3>
+        <div class="flex justify-center items-center p-12">
+          <form @submit.prevent="submitForm" class="bg-white rounded-lg shadow-lg max-w-sm p-8 w-101 md:w-100 space-y-2">
+            <h2 class="font-bold text-gray-700 text-2xl" style="font-family: 'Nippo', sans-serif;">Contact</h2>
+            <h3 class="text-xl font-bold text-gray-700">Let's get in touch</h3>
             
-            <div class="space-y-2">
-              <label for="email" class="block text-gray-700 font-medium">Email</label>
+            <div class="space-y-1">
+              <label for="email" class="block text-gray-700 font-medium">Enter Your Email</label>
               <input 
                 type="email" 
                 id="email" 
@@ -42,7 +42,7 @@
             </div>
             
             <div class="space-y-2">
-              <label for="message" class="block text-gray-700 font-medium">Message</label>
+              <label for="message" class="block text-gray-700 font-medium">Enter Your Message</label>
               <textarea 
                 id="message" 
                 v-model="formData.message" 
