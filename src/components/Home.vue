@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col h-screen  bg-gradient-to-r from-pink-200 via-pink-400 to-cyan-500">
+  <section class="flex flex-col h-screen bg-[url(./assets/background.webp)] bg-cover bg-center">
     <div class="flex flex-row justify-center items-center flex-grow">
       <h1 class="text-white text-6xl md:text-9xl text-center mb-6">
         <span class="inline-block" style="font-family: 'Nippo', sans-serif;">Web Designer</span>
