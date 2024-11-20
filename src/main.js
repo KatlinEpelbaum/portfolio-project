@@ -8,6 +8,8 @@ import Home from './components/Home.vue';
 import Contact from './components/Contact.vue';
 import About from './components/About.vue';
 import Services from './components/Services.vue';
+import emailjs from '@emailjs/browser';
+emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
 
 // Define routes
 const routes = [

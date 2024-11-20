@@ -47,7 +47,7 @@
   </section>
       <!-- Services -->
   <section class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 px-6 md:px-12 py-10 text-slate-800">
-    <!-- Service Card 1: Web Design -->
+    <!-- Service 1: Web Design -->
     <div class="flex flex-col bg-white p-6 rounded-lg  border-2 border-[#c38aba] md:shadow-shadow1">
       <p class="text-3xl font-bold text-cyan-700" style="font-family: 'Nippo', sans-serif;">01</p>
       <h2 class="text-2xl font-semibold text-pink-400 mt-2">Web Design</h2>
@@ -62,7 +62,7 @@
       </div>
     </div>
 
-    <!-- Service Card 2: Development -->
+    <!-- Service 2: Development -->
     <div class="flex flex-col bg-white p-6 rounded-lg  border-2 border-[#c38aba] md:shadow-shadow2">
       <p class="text-3xl font-bold text-cyan-700" style="font-family: 'Nippo', sans-serif;">02</p>
       <h2 class="text-2xl font-semibold text-pink-400 mt-2">Development</h2>
@@ -77,7 +77,7 @@
       </div>
     </div>
 
-    <!-- Service Card 3: Website Accessibility Audits -->
+    <!-- Service  3: Website Accessibility Audits -->
     <div class="flex flex-col bg-white p-6 rounded-lg  border-2 border-[#c38aba] md:shadow-shadow3">
       <p class="text-3xl font-bold text-cyan-700" style="font-family: 'Nippo', sans-serif;">03</p>
       <h2 class="text-2xl font-semibold text-pink-400 mt-2">Website Accessibility Audits</h2>
@@ -113,7 +113,7 @@
   <section class="relative pl-10 pr-10 pb-8 md:pl-32 md:pr-32 text-slate-700">
     <div class="relative space-y-16 before:absolute before:inset-0 before:mx-auto before:w-0.5 before:bg-gradient-to-b from-gray-100 via-pink-400 to-gray-100">
 
-      <!-- Step 1: Discovery Call -->
+      <!-- Step 1 -->
       <div class="relative md:flex md:items-start md:space-x-8">
         <div class="flex justify-center md:ml-19 md:justify-end md:w-1/2">
           <div class="relative flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-pink-500 to-cyan-500 text-white shadow">
@@ -145,7 +145,7 @@
         </div>
       </div>
 
-      <!-- Step 2: Concept & Strategy -->
+      <!-- Step 2 -->
       <div class="relative md:flex md:items-start md:space-x-8 md:flex-row-reverse">
         <div class="flex justify-center md:mr-19 md:justify-start md:w-1/2">
           <div class="relative flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-pink-500 to-cyan-500 text-white shadow">
@@ -177,7 +177,7 @@
         </div>
       </div>
 
-      <!-- Step 3: Web Design -->
+      <!-- Step 3 -->
       <div class="relative md:flex md:items-start md:space-x-8">
         <div class="flex justify-center md:ml-19 md:justify-end md:w-1/2">
           <div class="relative flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-pink-500 to-cyan-500 text-white shadow">
@@ -205,7 +205,7 @@
         </div>
       </div>
 
-      <!-- Step 4: Development -->
+      <!-- Step 4 -->
       <div class="relative md:flex md:items-start md:space-x-8 md:flex-row-reverse">
         <div class="flex justify-center md:mr-19 md:justify-start md:w-1/2">
           <div class="relative flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-pink-500 to-cyan-500 text-white shadow">
@@ -237,7 +237,7 @@
         </div>
       </div>
 
-      <!-- Step 5: Launch & Support -->
+      <!-- Step 5 -->
       <div class="relative md:flex md:items-start md:space-x-8">
         <div class="flex justify-center md:ml-19 md:justify-end md:w-1/2">
           <div class="relative flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-pink-500 to-cyan-500 text-white shadow">
@@ -274,110 +274,62 @@
   <section class="py-8 px-4">
         <div class="text-center mb-8">
             <h1 class="text-5xl md:text-7xl lg:text-8xl pb-4 text-slate-800">
-                What my <br><span style="font-family: 'Nippo', sans-serif;" class="italic">clients say</span>
+                What my <br><span style="font-family: 'Nippo', sans-serif;" class="italic text-pink-400">co-workers say</span>
             </h1>
             <p class="font-semibold text-slate-800 text-lg md:text-xl">
-                See what my clients have to say about working with me and the <br class="hidden md:block"> results I helped them achieve.
+                See what my co-workers have to say about working with me and the <br class="hidden md:block"> results I helped them achieve.
             </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto p-8">
-            <!-- Testimonial Card 1 -->
+            <!-- Testimonial 1 -->
             <div class="bg-white p-6 rounded-lg border border-pink-400 shadow-lg">
                 <h2 class="text-xl font-bold text-slate-700 mb-2">
-                    Amazing Results with Katlin's Premium Web Design Services.
+                  Outstanding Results with Katlin's Expert Web Development Services
                 </h2>
                 <p class="mt-4 leading-relaxed text-slate-600 italic">
-                    "Katlin is a top-notch web designer who created a stunning website for my business. She was attentive to my needs and provided excellent customer service throughout the entire process. I highly recommend her services."
+                    "Katlin is a skilled web developer who consistently delivers high-quality work. They're great at solving problems and always willing to collaborate to get things done"
                 </p>
                 <div class="flex items-center mt-6">
                     <img 
-                        src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg" 
+                        src="https://i.pinimg.com/564x/7b/12/2b/7b122bfb0391eea8a55c6b331471b7db.jpg" 
                         class="h-16 w-16 rounded-full border-2 border-pink-400" 
                         alt="Client Image"
                     />
                     <div class="ml-4">
-                        <h3 class="uppercase tracking-wider font-semibold text-pink-400">The Cat</h3>
-                        <p class="text-slate-600">CEO of Whiskers</p>
+                        <h3 class="uppercase tracking-wider font-semibold text-pink-400">Co-worker one</h3>
                     </div>
                 </div>
             </div>
 
-            <!-- Testimonial Card 2 -->
+            <!-- Testimonial 2 -->
             <div class="bg-white p-6 rounded-lg border border-pink-400 shadow-lg">
                 <h2 class="text-xl font-bold text-slate-700 mb-2">
-                    Amazing Results with Katlin's Premium Web Design Services.
+                  Exceptional Teamwork and Collaboration with Katlin's Web Design Expertise
                 </h2>
                 <p class="mt-4 leading-relaxed text-slate-600 italic">
-                    "Katlin is a top-notch web designer who created a stunning website for my business. She was attentive to my needs and provided excellent customer service throughout the entire process. I highly recommend her services."
+                    "Katlin is an excellent team player, always supportive and ready to collaborate. They contribute ideas and work seamlessly with others to achieve the best results."
                 </p>
                 <div class="flex items-center mt-6">
-                    <img 
-                        src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg" 
+                  <img 
+                        src="https://i.pinimg.com/564x/7b/12/2b/7b122bfb0391eea8a55c6b331471b7db.jpg" 
                         class="h-16 w-16 rounded-full border-2 border-pink-400" 
                         alt="Client Image"
                     />
                     <div class="ml-4">
-                        <h3 class="uppercase tracking-wider font-semibold text-pink-400">The Cat 2</h3>
-                        <p class="text-slate-600">CEO of Whiskers</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Testimonial Card 3 -->
-            <div class="bg-white p-6 rounded-lg border border-pink-400 shadow-lg">
-                <h2 class="text-xl font-bold text-slate-700 mb-2">
-                    Amazing Results with Katlin's Premium Web Design Services.
-                </h2>
-                <p class="mt-4 leading-relaxed text-slate-600 italic">
-                    "Katlin is a top-notch web designer who created a stunning website for my business. She was attentive to my needs and provided excellent customer service throughout the entire process. I highly recommend her services."
-                </p>
-                <div class="flex items-center mt-6">
-                    <img 
-                        src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg" 
-                        class="h-16 w-16 rounded-full border-2 border-pink-400" 
-                        alt="Client Image"
-                    />
-                    <div class="ml-4">
-                        <h3 class="uppercase tracking-wider font-semibold text-pink-400">The Cat 3</h3>
-                        <p class="text-slate-600">CEO of Whiskers</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Testimonial Card 4 -->
-            <div class="bg-white p-6 rounded-lg border border-pink-400 shadow-lg">
-                <h2 class="text-xl font-bold text-slate-700 mb-2">
-                    Amazing Results with Katlin's Premium Web Design Services.
-                </h2>
-                <p class="mt-4 leading-relaxed text-slate-600 italic">
-                    "Katlin is a top-notch web designer who created a stunning website for my business. She was attentive to my needs and provided excellent customer service throughout the entire process. I highly recommend her services."
-                </p>
-                <div class="flex items-center mt-6">
-                    <img 
-                        src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg" 
-                        class="h-16 w-16 rounded-full border-2 border-pink-400" 
-                        alt="Client Image"
-                    />
-                    <div class="ml-4">
-                        <h3 class="uppercase tracking-wider font-semibold text-pink-400">The Cat 4</h3>
-                        <p class="text-slate-600">CEO of Whiskers</p>
+                        <h3 class="uppercase tracking-wider font-semibold text-pink-400">Co-worker two</h3>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-      <!-- Mobile Menu -->
+    <!-- About -->
     <section>
       <div class="relative bg-white text-slate-800 font-sans pb-8">
-        <!-- Header Section -->
         <div class="flex items-center justify-between flex-wrap p-10">
-          <!-- First Text on the Left -->
           <h1 class="text-6xl md:text-8xl font-serif mt-20 md:mt-60 hidden md:block md:flex-1">
             Kätlin
           </h1>
-
-          <!-- Profile Image in the Center -->
           <div class="flex justify-center md:w-42 w-30 mx-auto mt-6 md:mt-0 md:mx-0">
             <img
               class="w-30 md:h-42 md:w-42"
@@ -385,8 +337,6 @@
               alt="Flower"
             />
           </div>
-
-          <!-- Second Text on the Right -->
           <h1 class="text-6xl md:text-8xl font-serif mt-20 md:mt-60 text-center md:text-left md:flex-1">
             Kätlin
             <span
@@ -396,20 +346,15 @@
             </span>
           </h1>
         </div>
-            <!-- Description Section -->
         <div class="max-w-7xl mx-auto mt-16 px-6 md:px-10">
           <div class="flex flex-col md:flex-row items-center md:items-end">
-                <!-- Left Column -->
               <div class="md:w-1/2 flex flex-col justify-center text-center md:text-right mb-6 md:mb-12 pr-0 md:pr-8 md:border-r-8 border-cyan-700">
                 <h2 class="text-2xl md:text-3xl font-light">
                   A website that leaves <br />
                   <span class="italic font-bold">a lasting impression!</span>
                 </h2>
               </div>
-                <!-- Vertical Divider (Only for Desktop) -->
               <div class="hidden md:block border-l border-gray-300 h-full mx-4"></div>
-
-                <!-- Right Column -->
               <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left mt-6 md:mt-0">
                 <p class="max-w-2xl mx-auto text-gray-700 text-base md:text-lg leading-relaxed">
                     Hi, I'm Kätlin Epelbaum - a freelancer specializing in premium web
@@ -418,8 +363,6 @@
                     touch to every project. Let's work together to bring your vision to
                     life!
                 </p>
-
-                <!-- Social Media Icons -->
                 <div class="flex justify-center md:justify-start gap-6 mt-6">
                     <a href="https://www.facebook.com/katlin.epelbaum/" class="text-gray-500 hover:text-black transition">
                       <i class="fab fa-facebook fa-2x"></i>
@@ -436,6 +379,7 @@
           </div>
         </div>
     </section>
+    <!-- Contact -->
     <section class="text-white  flex flex-col justify-between bg-gradient-to-b from-white to-pink-300">
       <div class="text-center py-20 px-6">
         <p class="uppercase tracking-widest text-slate-800 text-xl">Project in Mind?</p>

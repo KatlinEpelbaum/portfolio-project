@@ -25,46 +25,105 @@
             </li>
           </ul>
         </div>
-        
         <div class="flex justify-center items-center p-16">
-          <form action="contact.php" method="POST" class="bg-white rounded-lg shadow-lg max-w-sm p-8 w-101 md:w-100  space-y-6">
+          <form @submit.prevent="submitForm" class="bg-white rounded-lg shadow-lg max-w-sm p-8 w-101 md:w-100 space-y-6">
             <h2 class="font-bold text-gray-700 text-xl" style="font-family: 'Nippo', sans-serif;">Contact</h2>
             <h3 class="text-2xl font-bold text-pink-400">Let's get in touch</h3>
             
             <div class="space-y-2">
-              <label for="name" class="block text-gray-700 font-medium">Name</label>
-              <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-700" required />
-            </div>
-            
-            <div class="space-y-2">
               <label for="email" class="block text-gray-700 font-medium">Email</label>
-              <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-700" required />
+              <input 
+                type="email" 
+                id="email" 
+                v-model="formData.email" 
+                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-700" 
+                required 
+              />
             </div>
             
             <div class="space-y-2">
               <label for="message" class="block text-gray-700 font-medium">Message</label>
-              <textarea id="message" name="message" rows="4" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-700" required></textarea>
+              <textarea 
+                id="message" 
+                v-model="formData.message" 
+                rows="4" 
+                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-700" 
+                required
+              ></textarea>
             </div>
             
             <div class="flex justify-start">
-              <button type="submit" class="bg-pink-400 text-white py-2 px-6 rounded-md hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-600 transition duration-200">
-                Send Message
+              <button 
+                type="submit" 
+                class="bg-pink-400 text-white py-2 px-6 rounded-md hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-600 transition duration-200"
+                :disabled="isSubmitting"
+              >
+                {{ isSubmitting ? 'Sending...' : 'Send Message' }}
               </button>
             </div>
-          </form>
 
+            <p v-if="feedback" :class="feedbackClass" class="mt-4">
+              {{ feedback }}
+            </p>
+          </form>
         </div>
       </div>
     </section>
   </template>
   
   
-<script>
+  <script>
+import emailjs from '@emailjs/browser';
 
 export default {
   name: 'Contact',
-};
-
-
-</script>
   
+  data() {
+    return {
+      formData: {
+        email: '',
+        message: ''
+      },
+      feedback: '',
+      isSubmitting: false,
+      feedbackClass: ''
+    }
+  },
+
+  mounted() {
+    emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
+  },
+  methods: {
+    async submitForm() {
+      this.isSubmitting = true
+      this.feedback = ''
+      
+      try {
+        const templateParams = {
+          from_email: this.formData.email,
+          message: this.formData.message,
+        }
+
+        const response = await emailjs.send(
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+          templateParams
+        )
+
+        if (response.status === 200) {
+          this.feedback = 'Message sent successfully!'
+          this.feedbackClass = 'text-green-600'
+          this.formData.email = ''
+          this.formData.message = ''
+        }
+      } catch (error) {
+        console.error('Error:', error)
+        this.feedback = 'Failed to send message. Please try again.'
+        this.feedbackClass = 'text-red-600'
+      } finally {
+        this.isSubmitting = false
+      }
+    }
+  }
+};
+</script>

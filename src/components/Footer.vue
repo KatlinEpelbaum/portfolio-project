@@ -1,11 +1,8 @@
 <template>
     <footer class="bg-gray-50 py-10 text-gray-600 text-sm">
       <div class="container mx-auto px-6 md:px-12 flex flex-wrap justify-between items-start space-y-8 md:space-y-0">
-        
-        <!-- Social Links Section -->
         <div class="w-full md:w-1/3 space-y-6">
           <h3 class="font-bold text-2xl text-pink-500">Kätlin .E</h3>
-          
           <ul class="space-y-4">
             <li>
               <a href="https://www.facebook.com/katlin.epelbaum/" class="flex items-center space-x-3 text-gray-500 hover:text-pink-500 transition">
@@ -27,8 +24,6 @@
             </li>
           </ul>
         </div>
-  
-        <!-- Pages Section with Vue Router Links -->
         <div class="w-full md:w-1/3 space-y-6">
           <h3 class="text-pink-500 text-2xl font-semibold">Pages</h3>
           <ul class="space-y-3">
@@ -46,8 +41,6 @@
             </li>
           </ul>
         </div>
-  
-        <!-- Contact Section -->
         <div class="w-full md:w-1/3 space-y-6">
           <h3 class="text-pink-500 text-2xl font-semibold">Let's Connect</h3>
           <p class="text-gray-500">
@@ -58,8 +51,6 @@
           </router-link>
         </div>
       </div>
-  
-      <!-- Footer Bottom -->
       <div class="mt-10 text-center border-t border-gray-200 pt-6">
         <p class="text-gray-500 text-sm">&copy; 2024 Made by Kätlin Epelbaum. All rights reserved.</p>
       </div>
