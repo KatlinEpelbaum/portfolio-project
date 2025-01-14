@@ -39,6 +39,9 @@
             <li>
               <router-link to="/contact" class="block text-gray-500 hover:text-pink-500 transition">Contact</router-link>
             </li>
+            <li>
+              <router-link to="/contact" class="block text-gray-500 hover:text-pink-500 transition">Projects</router-link>
+            </li>
           </ul>
         </div>
         <div class="w-full md:w-1/3 space-y-6">

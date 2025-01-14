@@ -62,6 +62,7 @@ export default {
         { name: 'Home', href: '/' },  
         { name: 'Services', href: '/Services' },
         { name: 'About', href: '/about' },
+        { name: 'Projects', href: '/projects' },
       ],
       isMenuOpen: false,
     };

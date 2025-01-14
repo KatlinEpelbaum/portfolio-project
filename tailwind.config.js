@@ -26,6 +26,7 @@ export default {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-50%)' },
         },
+        
       },
       spacing: {
         '19': '75px', 

@@ -2,9 +2,9 @@
   <section class="flex flex-col h-screen bg-[url(./assets/background.webp)] bg-cover bg-center">
     <div class="flex flex-row justify-center items-center flex-grow">
       <h1 class="text-white text-6xl md:text-9xl text-center mb-6">
-        <span class="inline-block" style="font-family: 'Nippo', sans-serif;">Web Designer</span>
+        <span class="inline-block" style="font-family: 'Pilcrow Rounded', sans-serif;">Web Designer</span>
          & 
-        <span class="inline-block" style="font-family: 'Nippo', sans-serif;">Developer</span>
+        <span class="inline-block" style="font-family: 'Pilcrow Rounded', sans-serif;">Developer</span>
       </h1>
     </div>
     <div class="flex justify-center pb-20 mt-10 animate-bounce">
@@ -49,7 +49,7 @@
   <section class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 px-6 md:px-12 py-10 text-slate-800">
     <!-- Service 1: Web Design -->
     <div class="flex flex-col bg-white p-6 rounded-lg  border-2 border-[#c38aba] md:shadow-shadow1">
-      <p class="text-3xl font-bold text-cyan-700" style="font-family: 'Nippo', sans-serif;">01</p>
+      <p class="text-3xl font-bold text-cyan-700" style="font-family: 'Pilcrow Rounded', sans-serif;">01</p>
       <h2 class="text-2xl font-semibold text-pink-400 mt-2">Web Design</h2>
       <p class="mt-4 text-gray-700">Visually stunning web designs that captivate your audience by blending your brand voice and customer needs.</p>
       <div class="flex items-center mt-6">
@@ -64,7 +64,7 @@
 
     <!-- Service 2: Development -->
     <div class="flex flex-col bg-white p-6 rounded-lg  border-2 border-[#c38aba] md:shadow-shadow2">
-      <p class="text-3xl font-bold text-cyan-700" style="font-family: 'Nippo', sans-serif;">02</p>
+      <p class="text-3xl font-bold text-cyan-700" style="font-family: 'Pilcrow Rounded', sans-serif;">02</p>
       <h2 class="text-2xl font-semibold text-pink-400 mt-2">Development</h2>
       <p class="mt-4 text-gray-700">Get custom web development solutions that are tailored to your specifications, designed to deliver a flawless user experience.</p>
       <div class="flex items-center mt-6">
@@ -79,7 +79,7 @@
 
     <!-- Service  3: Website Accessibility Audits -->
     <div class="flex flex-col bg-white p-6 rounded-lg  border-2 border-[#c38aba] md:shadow-shadow3">
-      <p class="text-3xl font-bold text-cyan-700" style="font-family: 'Nippo', sans-serif;">03</p>
+      <p class="text-3xl font-bold text-cyan-700" style="font-family: 'Pilcrow Rounded', sans-serif;">03</p>
       <h2 class="text-2xl font-semibold text-pink-400 mt-2">Website Accessibility Audits</h2>
       <p class="mt-4 text-gray-700">Ensure your website is accessible to all users, including those with disabilities. I conduct thorough accessibility audits to make your site user-friendly and compliant with WCAG guidelines.</p>
       <div class="flex items-center mt-6">
@@ -99,7 +99,7 @@
       <h1 class="text-5xl md:text-8xl pb-4">
         Your Website <br>
         <span 
-          style="font-family: 'Nippo', sans-serif;" 
+          style="font-family: 'Pilcrow Rounded', sans-serif;" 
           class="italic bg-gradient-to-r from-cyan-500 via-pink-400 to-purple-500 text-transparent bg-clip-text">
           in 5 steps
         </span>
@@ -274,7 +274,7 @@
   <section class="px-4">
         <div class="text-center mb-8">
             <h1 class="text-5xl md:text-7xl lg:text-8xl pb-4 text-slate-800">
-                What my <br><span style="font-family: 'Nippo', sans-serif;" class="italic text-pink-400">co-workers say</span>
+                What my <br><span style="font-family: 'Pilcrow Rounded', sans-serif;" class="italic text-pink-400">co-workers say</span>
             </h1>
             <p class="font-semibold text-slate-800 text-lg md:text-xl">
                 See what my co-workers have to say about working with me and the <br class="hidden md:block"> results I helped them achieve.
@@ -340,7 +340,7 @@
           <h1 class="text-6xl pr-6 md:text-8xl font-serif mt-20 md:mt-60 text-center md:text-left md:flex-1">
             Kätlin
             <span
-              style="font-family: 'Nippo', sans-serif;"
+              style="font-family: 'Pilcrow Rounded', sans-serif;"
               class="italic text-transparent pr-4 bg-clip-text bg-gradient-to-r from-pink-400 to-cyan-700">
               Epelbaum
             </span>

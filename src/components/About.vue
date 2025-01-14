@@ -5,7 +5,7 @@
         <h1 class="text-6xl md:text-8xl font-serif">
           Kätlin
           <span
-            style="font-family: 'Nippo', sans-serif;"
+            style="font-family: 'Pilcrow Rounded', sans-serif;"
             class="italic text-transparent pr-4 bg-clip-text bg-gradient-to-r from-pink-400 to-cyan-700">
             Epelbaum
           </span>

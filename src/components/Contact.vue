@@ -27,7 +27,7 @@
         </div>
         <div class="flex justify-center items-center p-12">
           <form @submit.prevent="submitForm" class="bg-white rounded-lg shadow-lg max-w-sm p-8 w-101 md:w-100 space-y-2">
-            <h2 class="font-bold text-gray-700 text-2xl" style="font-family: 'Nippo', sans-serif;">Contact</h2>
+            <h2 class="font-bold text-gray-700 text-2xl" style="font-family: 'Pilcrow Rounded', sans-serif;">Contact</h2>
             <h3 class="text-xl font-bold text-gray-700">Let's get in touch</h3>
             
             <div class="space-y-1">

@@ -8,6 +8,7 @@ import Home from './components/Home.vue';
 import Contact from './components/Contact.vue';
 import About from './components/About.vue';
 import Services from './components/Services.vue';
+import Projects from './components/Projects.vue';
 import emailjs from '@emailjs/browser';
 emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
 
@@ -32,6 +33,11 @@ const routes = [
     path: '/services', 
     name: 'services',
     component: Services, 
+  },
+  {
+    path: '/projects', 
+    name: 'projects',
+    component: Projects, 
   },
 ];
 
