@@ -1,5 +1,5 @@
 <template>
-    <section class="flex flex-col bg-gradient-to-b from-fuchsia-200 to-pink-100 pb-20 bg-center">
+    <section class=" mx-auto md:px-32 py-12 bg-gradient-to-b from-slate-50 to-pink-200 pb-20">
       <div class="flex flex-col md:flex-row justify-center md:justify-around items-center">
         <div class="flex flex-col justify-center items-start p-6 ">
             <h1 class="text-6xl font-semibold italic pb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-pink-700">Get in Touch</h1>
@@ -25,48 +25,82 @@
             </li>
           </ul>
         </div>
-        <div class="flex justify-center items-center p-12">
-          <form @submit.prevent="submitForm" class="bg-white rounded-lg shadow-lg max-w-sm p-8 w-101 md:w-100 space-y-2">
-            <h2 class="font-bold text-gray-700 text-2xl" style="font-family: 'Pilcrow Rounded', sans-serif;">Contact</h2>
-            <h3 class="text-xl font-bold text-gray-700">Let's get in touch</h3>
-            
-            <div class="space-y-1">
-              <label for="email" class="block text-gray-700 font-medium">Enter Your Email</label>
+        <!-- Right Column - Contact Form -->
+        <div class="w-full max-w-md mx-auto md:p-0 p-6">
+          <form @submit.prevent="submitForm" 
+                class="bg-white rounded-xl shadow-xl p-6 md:p-8 space-y-6">
+            <div class="space-y-2">
+              <h2 class="font-bold text-gray-800 text-2xl md:text-3xl">Contact</h2>
+              <h3 class="text-xl text-gray-700">Let's get in touch</h3>
+            </div>
+
+            <!-- Email Input -->
+            <div class="space-y-2">
+              <label for="email" class="block text-gray-700 font-medium">
+                Email Address
+              </label>
               <input 
                 type="email" 
                 id="email" 
                 v-model="formData.email" 
-                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-700" 
+                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent transition duration-200"
                 required 
               />
             </div>
-            
+
+            <!-- Message Input -->
             <div class="space-y-2">
-              <label for="message" class="block text-gray-700 font-medium">Enter Your Message</label>
+              <label for="message" class="block text-gray-700 font-medium">
+                Your Message
+              </label>
               <textarea 
                 id="message" 
                 v-model="formData.message" 
                 rows="4" 
-                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-700" 
+                :disabled="isSubmitting"
+                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent transition duration-200"
+                :class="{ 'opacity-50': isSubmitting }"
                 required
               ></textarea>
             </div>
-            
+
+            <!-- Submit Button -->
             <div class="flex justify-start">
               <button 
                 type="submit" 
-                class="bg-pink-400 text-white py-2 px-6 rounded-md hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-600 transition duration-200"
                 :disabled="isSubmitting"
+                class="relative bg-pink-500 text-white py-3 px-8 rounded-lg hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {{ isSubmitting ? 'Sending...' : 'Send Message' }}
+                <span :class="{ 'opacity-0': isSubmitting }">
+                  Send Message
+                </span>
+                <span v-if="isSubmitting" 
+                      class="absolute inset-0 flex items-center justify-center">
+                  <i class="fas fa-circle-notch fa-spin"></i>
+                </span>
               </button>
             </div>
 
-            <p v-if="feedback" :class="feedbackClass" class="mt-4">
-              {{ feedback }}
-            </p>
+            <!-- Feedback Message -->
+            <transition
+              enter-active-class="transition duration-300 ease-out"
+              enter-from-class="transform scale-95 opacity-0"
+              enter-to-class="transform scale-100 opacity-100"
+              leave-active-class="transition duration-200 ease-in"
+              leave-from-class="transform scale-100 opacity-100"
+              leave-to-class="transform scale-95 opacity-0"
+            >
+              <p v-if="feedback" 
+                 :class="[
+                   'mt-4 p-3 rounded-lg text-sm',
+                   feedbackClass
+                 ]">
+                {{ feedback }}
+              </p>
+            </transition>
           </form>
         </div>
+  
       </div>
     </section>
   </template>

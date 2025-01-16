@@ -100,7 +100,7 @@
         Your Website <br>
         <span 
           style="font-family: 'Pilcrow Rounded', sans-serif;" 
-          class="italic bg-gradient-to-r from-cyan-500 via-pink-400 to-purple-500 text-transparent bg-clip-text">
+          class="italic pr-5 bg-gradient-to-r from-cyan-500 via-pink-400 to-purple-500 text-transparent bg-clip-text">
           in 5 steps
         </span>
       </h1>

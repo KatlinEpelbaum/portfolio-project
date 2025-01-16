@@ -4,7 +4,7 @@
       <h1 class="text-4xl md:text-7xl text-slate-800  mb-6 font-bold leading-tight" >
         Web Design &  Development
       </h1>
-      <p class=" text-pink-400 uppercase font-semibold text-xl">
+      <p class=" text-pink-400 uppercase font-semibold text-xl p-6">
         Crafting beautiful, functional websites with a touch of magic
       </p>
     </div>
