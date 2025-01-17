@@ -12,7 +12,6 @@ import Projects from './components/Projects.vue';
 import emailjs from '@emailjs/browser';
 emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
 
-// Define routes
 const routes = [
   {
     path: '/', 
@@ -41,13 +40,11 @@ const routes = [
   },
 ];
 
-// Create the router
 const router = createRouter({
   history: createWebHistory(),
   routes,
 });
 
-// Create and mount the Vue app with the router
 createApp(App)
   .use(router)
   .mount('#app');

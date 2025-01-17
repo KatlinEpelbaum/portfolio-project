@@ -333,7 +333,7 @@
           <div class="flex justify-center md:w-42 w-30 mx-auto mt-6 md:mt-0 md:mx-0">
             <img
               class="w-30 md:h-42 md:w-42"
-              src="/src/img/flower.webp"
+              src="/src/assets/flower.webp"
               alt="Flower"
             />
           </div>

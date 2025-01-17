@@ -4,13 +4,13 @@
       <div class="flex justify-center md:w-1/2 mx-auto mt-6 md:mt-10 md:mx-0 relative z-10">
         <img
           class="w-32 sm:w-40 md:w-60 lg:w-72 rounded-lg shadow-lg transform rotate-3 transition-all duration-500 hover:scale-110"
-          src="/src/img/pebbles.webp"
+          src="/src/assets/pebbles.webp"
           alt="Pebbles"
         />
         <div class="absolute inset-0 bg-gradient-to-r from-pink-300 to-cyan-500 opacity-40 rounded-full blur-xl -z-10"></div>
       </div>
       <div class="mt-6 md:mt-0 text-center md:text-left md:flex-1 px-4 md:px-8 relative">
-        <h1 class="text-6xl md:text-8xl font-serif">
+        <h1 class="text-6xl md:text-8xl" >
           Kätlin
           <span
             class="italic pr-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-cyan-700">
@@ -69,7 +69,7 @@
           <p class="uppercase tracking-widest text-xl font-bold text-pink-500 mb-3">Kätlin Epelbaum</p>
 
           <p class="text-gray-600 font-semibold leading-relaxed mb-6">
-            I’m from Kuressaare, where I’m currently studying to become a junior software developer at Kuressaare Vocational School. The world of IT has always fascinated me. I remember watching my brother study technology, which deepened my interest and inspired me to pursue this path.
+            I’m from Kuressaare, where I’m currently studying to become a junior software developer at Kuressaare Ametikool. The world of IT has always fascinated me. I remember watching my brother study technology, which deepened my interest and inspired me to pursue this path.
           </p>
           <p class="text-gray-600 font-semibold leading-relaxed mb-6">
             In my free time, I’m a very creative person and love to express myself through various activities. Fantasy books are a huge passion of mine—magical worlds, adventures, and unique characters constantly inspire me. I also enjoy watching movies with my friends, whether they’re dramas, thrillers, or comedies. Movie nights always bring us together and spark interesting conversations.          </p>
