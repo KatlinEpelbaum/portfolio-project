@@ -10,39 +10,43 @@ import About from './components/About.vue';
 import Services from './components/Services.vue';
 import Projects from './components/Projects.vue';
 import emailjs from '@emailjs/browser';
-emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
+
+emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
 const routes = [
   {
-    path: '/', 
+    path: '/',
     name: 'home',
-    component: Home, 
+    component: Home,
   },
   {
-    path: '/contact', 
+    path: '/contact',
     name: 'contact',
-    component: Contact, 
+    component: Contact,
   },
   {
-    path: '/about', 
+    path: '/about',
     name: 'about',
-    component: About, 
+    component: About,
   },
   {
-    path: '/services', 
+    path: '/services',
     name: 'services',
-    component: Services, 
+    component: Services,
   },
   {
-    path: '/projects', 
+    path: '/projects',
     name: 'projects',
-    component: Projects, 
+    component: Projects,
   },
 ];
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    return { top: 0, behavior: 'smooth' };
+  },
 });
 
 createApp(App)
