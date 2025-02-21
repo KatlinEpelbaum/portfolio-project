@@ -19,7 +19,7 @@
     </div>
   </section>
       <!-- Skills -->
-  <section id="skills" class="flex flex-col p-6 md:p-4">
+  <section id="skills" class="flex flex-col p-6 md:p-20">
     <div class="relative overflow-hidden">
       <div class="flex animate-marquee w-max">
         <div class="flex">
@@ -50,7 +50,7 @@
       <!-- Services -->
     <section class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 px-6 md:px-12 py-10 text-slate-800">
       <!-- Service 1: Web Design -->
-    <div class="flex flex-col bg-white p-6 rounded-lg border-2 border-[#c38aba] md:shadow-shadow1 animate-fade-down animate-delay-1000">
+    <div class="flex flex-col bg-white p-6 rounded-lg border-2 border-[#c38aba] md:shadow-shadow1">
       <p class="text-3xl font-bold text-cyan-700" style="font-family: 'Pilcrow Rounded', sans-serif;">01</p>
       <h2 class="text-2xl font-semibold text-pink-400 mt-2">Web Design</h2>
       <p class="mt-4 text-gray-700">Visually stunning web designs that captivate your audience by blending your brand voice and customer needs.</p>
@@ -65,7 +65,7 @@
     </div>
 
     <!-- Service 2: Development -->
-    <div class="flex flex-col bg-white p-6 rounded-lg border-2 border-[#c38aba] md:shadow-shadow2 animate-fade-down animate-delay-1000">
+    <div class="flex flex-col bg-white p-6 rounded-lg border-2 border-[#c38aba] md:shadow-shadow2">
       <p class="text-3xl font-bold text-cyan-700" style="font-family: 'Pilcrow Rounded', sans-serif;">02</p>
       <h2 class="text-2xl font-semibold text-pink-400 mt-2">Development</h2>
       <p class="mt-4 text-gray-700">Get custom web development solutions that are tailored to your specifications, designed to deliver a flawless user experience.</p>
@@ -80,7 +80,7 @@
     </div>
 
     <!-- Service  3: Website Accessibility Audits -->
-    <div class="flex flex-col bg-white p-6 rounded-lg border-2 border-[#c38aba] md:shadow-shadow3 animate-fade-down animate-delay-1000">
+    <div class="flex flex-col bg-white p-6 rounded-lg border-2 border-[#c38aba] md:shadow-shadow3 ">
       <p class="text-3xl font-bold text-cyan-700" style="font-family: 'Pilcrow Rounded', sans-serif;">03</p>
       <h2 class="text-2xl font-semibold text-pink-400 mt-2">Website Accessibility Audits</h2>
       <p class="mt-4 text-gray-700">Ensure your website is accessible to all users, including those with disabilities. I conduct thorough accessibility audits to make your site user-friendly and compliant with WCAG guidelines.</p>
@@ -96,11 +96,11 @@
   </section>
     <!-- Timeline -->
     <section class="relative pl-10 pr-10 pb-8 md:pl-32 md:pr-32 text-slate-700">
-    <div class="text-center animate-fade-down animate-delay-500">
+    <div  class="text-center animate-delay-500">
       <p class="font-semibold">The Process</p>
       <h1 class="text-5xl md:text-8xl pb-4">
         Your Website <br>
-        <span class="italic pr-5 bg-gradient-to-r from-cyan-500 via-pink-400 to-purple-500 text-transparent bg-clip-text animate-pulse animate-infinite">
+        <span class="italic pr-5 bg-gradient-to-r from-cyan-500 via-pink-400 to-purple-500 text-transparent bg-clip-text">
           in 5 steps
         </span>
       </h1>
@@ -114,7 +114,7 @@
     <div class="relative space-y-16 before:absolute before:inset-0 before:mx-auto before:w-0.5 before:bg-gradient-to-b from-gray-100 via-pink-400 to-gray-100">
 
       <!-- Step 1 -->
-      <div class="relative md:flex md:items-start md:space-x-8">
+      <div data-aos="zoom-out" class="relative md:flex md:items-start md:space-x-8">
         <div class="flex justify-center md:ml-19 md:justify-end md:w-1/2">
           <div class="relative flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-pink-500 to-cyan-500 text-white shadow">
             1
@@ -146,7 +146,7 @@
       </div>
 
       <!-- Step 2 -->
-      <div class="relative md:flex md:items-start md:space-x-8 md:flex-row-reverse">
+      <div data-aos="zoom-out" class="relative md:flex md:items-start md:space-x-8 md:flex-row-reverse">
         <div class="flex justify-center md:mr-19 md:justify-start md:w-1/2">
           <div class="relative flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-pink-500 to-cyan-500 text-white shadow">
             2
@@ -178,7 +178,7 @@
       </div>
 
       <!-- Step 3 -->
-      <div class="relative md:flex md:items-start md:space-x-8">
+      <div data-aos="zoom-out" class="relative md:flex md:items-start md:space-x-8">
         <div class="flex justify-center md:ml-19 md:justify-end md:w-1/2">
           <div class="relative flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-pink-500 to-cyan-500 text-white shadow">
             3
@@ -206,7 +206,7 @@
       </div>
 
       <!-- Step 4 -->
-      <div class="relative md:flex md:items-start md:space-x-8 md:flex-row-reverse">
+      <div data-aos="zoom-out" class="relative md:flex md:items-start md:space-x-8 md:flex-row-reverse">
         <div class="flex justify-center md:mr-19 md:justify-start md:w-1/2">
           <div class="relative flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-pink-500 to-cyan-500 text-white shadow">
             4
@@ -238,7 +238,7 @@
       </div>
 
       <!-- Step 5 -->
-      <div class="relative md:flex md:items-start md:space-x-8">
+      <div data-aos="zoom-out" class="relative md:flex md:items-start md:space-x-8">
         <div class="flex justify-center md:ml-19 md:justify-end md:w-1/2">
           <div class="relative flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-pink-500 to-cyan-500 text-white shadow">
             5
@@ -283,7 +283,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 max-w-6xl mx-auto p-8">
             <!-- Testimonial 1 -->
-            <div class="bg-white p-6 rounded-lg border border-pink-400 shadow-lg">
+            <div data-aos="zoom-in" class="bg-white p-6 rounded-lg border border-pink-400 shadow-lg">
                 <h2 class="text-xl font-bold text-slate-700 mb-2">
                   Outstanding Results with Katlin's Expert Web Development Services
                 </h2>
@@ -303,7 +303,7 @@
             </div>
 
             <!-- Testimonial 2 -->
-            <div class="bg-white p-6 rounded-lg border border-pink-400 shadow-lg">
+            <div data-aos="zoom-in"  class="bg-white p-6 rounded-lg border border-pink-400 shadow-lg">
                 <h2 class="text-xl font-bold text-slate-700 mb-2">
                   Exceptional Teamwork and Collaboration with Katlin's Web Design Expertise
                 </h2>
@@ -405,6 +405,16 @@ export default {
   name: 'App',
   data() {
     return {
+      skills: [
+        'javascript',
+        'python',
+        'tailwindcss',
+        'mysql',
+        'vuejs',
+        'php',
+        'git',
+        'figma',
+      ],
       textParts: ["Web Designer", "&", "Developer"],
       typingSpeed: 100,
       cursor: "|",
