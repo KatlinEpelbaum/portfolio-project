@@ -2,12 +2,14 @@
   <section class="flex flex-col h-screen bg-[url(./assets/background.webp)] bg-cover bg-center">
     <div class="flex flex-row justify-center items-center flex-grow">
       <h1 class="text-white text-6xl md:text-9xl text-center mb-6">
-        <span class="inline-block" style="font-family: 'Pilcrow Rounded', sans-serif;">Web Designer</span>
-         & 
-        <span class="inline-block" style="font-family: 'Pilcrow Rounded', sans-serif;">Developer</span>
+        <span class="inline-block" style="font-family: 'Pilcrow Rounded', sans-serif;">
+          {{ typingLine }}
+        </span>
+        <span v-if="cursorVisible" class="text-slate-400">{{ cursor }}</span>
       </h1>
     </div>
-    <div class="flex justify-center pb-20 mt-10 animate-bounce">
+
+    <div class="flex justify-center pb-20 mt-5 animate-bounce">
         <a href="#skills" class="flex flex-col items-center text-white space-y-2">
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-10 h-10" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M8 1.5a.5.5 0 0 1 .5.5v10.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 12.793V2a.5.5 0 0 1 .5-.5z"/>
@@ -17,7 +19,7 @@
     </div>
   </section>
       <!-- Skills -->
-  <section id="skills" class="flex flex-col p-6 md:p-20">
+  <section id="skills" class="flex flex-col p-6 md:p-4">
     <div class="relative overflow-hidden">
       <div class="flex animate-marquee w-max">
         <div class="flex">
@@ -46,9 +48,9 @@
     </div>
   </section>
       <!-- Services -->
-  <section class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 px-6 md:px-12 py-10 text-slate-800">
-    <!-- Service 1: Web Design -->
-    <div class="flex flex-col bg-white p-6 rounded-lg  border-2 border-[#c38aba] md:shadow-shadow1">
+    <section class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 px-6 md:px-12 py-10 text-slate-800">
+      <!-- Service 1: Web Design -->
+    <div class="flex flex-col bg-white p-6 rounded-lg border-2 border-[#c38aba] md:shadow-shadow1 animate-fade-down animate-delay-1000">
       <p class="text-3xl font-bold text-cyan-700" style="font-family: 'Pilcrow Rounded', sans-serif;">01</p>
       <h2 class="text-2xl font-semibold text-pink-400 mt-2">Web Design</h2>
       <p class="mt-4 text-gray-700">Visually stunning web designs that captivate your audience by blending your brand voice and customer needs.</p>
@@ -63,7 +65,7 @@
     </div>
 
     <!-- Service 2: Development -->
-    <div class="flex flex-col bg-white p-6 rounded-lg  border-2 border-[#c38aba] md:shadow-shadow2">
+    <div class="flex flex-col bg-white p-6 rounded-lg border-2 border-[#c38aba] md:shadow-shadow2 animate-fade-down animate-delay-1000">
       <p class="text-3xl font-bold text-cyan-700" style="font-family: 'Pilcrow Rounded', sans-serif;">02</p>
       <h2 class="text-2xl font-semibold text-pink-400 mt-2">Development</h2>
       <p class="mt-4 text-gray-700">Get custom web development solutions that are tailored to your specifications, designed to deliver a flawless user experience.</p>
@@ -78,7 +80,7 @@
     </div>
 
     <!-- Service  3: Website Accessibility Audits -->
-    <div class="flex flex-col bg-white p-6 rounded-lg  border-2 border-[#c38aba] md:shadow-shadow3">
+    <div class="flex flex-col bg-white p-6 rounded-lg border-2 border-[#c38aba] md:shadow-shadow3 animate-fade-down animate-delay-1000">
       <p class="text-3xl font-bold text-cyan-700" style="font-family: 'Pilcrow Rounded', sans-serif;">03</p>
       <h2 class="text-2xl font-semibold text-pink-400 mt-2">Website Accessibility Audits</h2>
       <p class="mt-4 text-gray-700">Ensure your website is accessible to all users, including those with disabilities. I conduct thorough accessibility audits to make your site user-friendly and compliant with WCAG guidelines.</p>
@@ -93,14 +95,12 @@
     </div>
   </section>
     <!-- Timeline -->
-  <section class="flex flex-col items-center p-10 text-slate-700">
-    <div class="text-center">
+    <section class="relative pl-10 pr-10 pb-8 md:pl-32 md:pr-32 text-slate-700">
+    <div class="text-center animate-fade-down animate-delay-500">
       <p class="font-semibold">The Process</p>
       <h1 class="text-5xl md:text-8xl pb-4">
         Your Website <br>
-        <span 
-          style="font-family: 'Pilcrow Rounded', sans-serif;" 
-          class="italic pr-5 bg-gradient-to-r from-cyan-500 via-pink-400 to-purple-500 text-transparent bg-clip-text">
+        <span class="italic pr-5 bg-gradient-to-r from-cyan-500 via-pink-400 to-purple-500 text-transparent bg-clip-text animate-pulse animate-infinite">
           in 5 steps
         </span>
       </h1>
@@ -401,21 +401,48 @@
 </template>
 <script>
 
-  export default {
-    name: 'App',
-    data() {
-      return {
-        skills: [
-          'javascript',
-          'python',
-          'tailwindcss',
-          'mysql',
-          'vuejs',
-          'php',
-          'git',
-          'figma',
-        ],
-      };
+export default {
+  name: 'App',
+  data() {
+    return {
+      textParts: ["Web Designer", "&", "Developer"],
+      typingSpeed: 100,
+      cursor: "|",
+      typingLine: "",
+      cursorVisible: true, 
+      currentTextIndex: 0,
+    };
+  },
+  mounted() {
+    this.startTyping();
+    this.startCursorBlinking();
+  },
+  methods: {
+    async startTyping() {
+      for (const text of this.textParts) {
+        await this.typeText(text);
+      }
     },
-  };
+    typeText(text) {
+      return new Promise((resolve) => {
+        let i = 0;
+        const typingInterval = setInterval(() => {
+          if (i < text.length) {
+            this.typingLine += text.charAt(i);
+            i++;
+          } else {
+            clearInterval(typingInterval);
+            this.typingLine += " ";
+            resolve();
+          }
+        }, this.typingSpeed);
+      });
+    },
+    startCursorBlinking() {
+      setInterval(() => {
+        this.cursorVisible = !this.cursorVisible;
+      }, 500);
+    }
+  }
+};
 </script>
