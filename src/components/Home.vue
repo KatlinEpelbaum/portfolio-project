@@ -1,6 +1,37 @@
 <template>
-  <section class="flex flex-col h-screen bg-[url(./assets/background.webp)] bg-cover bg-center">
-    <div class="flex flex-row justify-center items-center flex-grow">
+  <section class="flex flex-col h-screen relative overflow-hidden justify-center">
+    <!-- Cat CSS Background -->
+    <div class="cat-background">
+      <div class="cat-container">
+        <div class="cat-head">
+          <div class="ear-left"></div>
+          <div class="ear-right"></div>
+          <div class="ear-inner-left"></div>
+          <div class="ear-inner-right"></div>
+          
+          <div class="eye-left">
+            <div class="pupil-left"></div>
+          </div>
+          <div class="eye-right">
+            <div class="pupil-right"></div>
+          </div>
+          
+          <div class="nose"></div>
+          
+          <div class="whisker-container">
+            <div class="whisker whisker-4"></div>
+            <div class="whisker whisker-5"></div>
+            <div class="whisker whisker-6"></div>
+            <div class="whisker whisker-1"></div>
+            <div class="whisker whisker-2"></div>
+            <div class="whisker whisker-3"></div>
+          </div>
+        </div>
+        
+        <div class="body"></div>
+      </div>
+    </div>
+    <!--<div class="flex flex-row justify-center items-center flex-grow">
       <h1 class="text-white text-6xl md:text-9xl text-center mb-6">
         <span class="inline-block" style="font-family: 'Pilcrow Rounded', sans-serif;">
           {{ typingLine }}
@@ -9,15 +40,15 @@
       </h1>
     </div>
 
-    <div class="flex justify-center pb-20 mt-5 animate-bounce">
-        <a href="#skills" class="flex flex-col items-center text-white space-y-2">
+    <div class="flex justify-center pb-20 mt-5 animate-bounce z-10 relative">
+        <a href="#skills" class="flex flex-col items-center space-y-2">
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-10 h-10" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M8 1.5a.5.5 0 0 1 .5.5v10.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 12.793V2a.5.5 0 0 1 .5-.5z"/>
           </svg>
           <span class="text-lg font-semibold">See More</span>
         </a>
     </div>
-  </section>
+  --></section>
       <!-- Skills -->
   <section id="skills" class="flex flex-col p-6 md:p-20">
     <div class="relative overflow-hidden">
@@ -456,3 +487,188 @@ export default {
   }
 };
 </script>
+<style scoped>
+
+
+.cat-background {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 180px;
+  background-color: #1a1a2e;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Ears */
+.cat-background {
+  --ear-color: #1a1a2e;
+  --inner-ear-color: #7952b3;
+}
+
+.cat-background .ear-left,
+.cat-background .ear-right,
+.cat-background .ear-inner-left,
+.cat-background .ear-inner-right {
+  position: absolute;
+}
+
+/* Cat eyes */
+.cat-background .eye-left,
+.cat-background .eye-right,
+.cat-background .nose {
+  position: absolute;
+}
+</style>
+
+<style>
+/* Cat parts - these need to be in global scope to use pseudo-elements */
+.cat-background .ear-left {
+  top: -40px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 90px solid #1a1a2e;
+  transform: rotate(-20deg);
+  z-index: -1;
+}
+
+.cat-background .ear-right {
+  top: -40px;
+  right: 20px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 90px solid #1a1a2e;
+  transform: rotate(20deg);
+  z-index: -1;
+}
+
+.cat-background .ear-inner-left {
+  top: -30px;
+  left: 30px;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 70px solid #7952b3;
+  transform: rotate(-20deg);
+  z-index: -2;
+}
+
+.cat-background .ear-inner-right {
+  top: -30px;
+  right: 30px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 70px solid #7952b3;
+  transform: rotate(20deg);
+  z-index: -2;
+}
+
+.cat-background .eye-left {
+  top: 50px;
+  left: 40px;
+  width: 50px;
+  height: 60px;
+  background-color: #d6fffa;
+  border-radius: 50%;
+  transform: rotate(10deg);
+}
+
+.cat-background .eye-right {
+  top: 50px;
+  right: 40px;
+  width: 50px;
+  height: 60px;
+  background-color: #d6fffa;
+  border-radius: 50%;
+  transform: rotate(-10deg);
+}
+
+.cat-background .eye-left::after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  width: 10px;
+  height: 25px;
+  background-color: #1a1a2e;
+  border-radius: 50%;
+  transform: rotate(10deg);
+}
+
+.cat-background .eye-right::after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  width: 10px;
+  height: 25px;
+  background-color: #1a1a2e;
+  border-radius: 50%;
+  transform: rotate(-10deg);
+}
+
+.cat-background .nose {
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 6px;
+  background-color: #ff9a9e;
+  border-radius: 50%;
+}
+
+/* Whiskers */
+.cat-background .whisker {
+  position: absolute;
+  width: 70px;
+  height: 1px;
+  background-color: #8a8a8a;
+}
+
+.cat-background .whisker:nth-child(1) {
+  top: 115px;
+  left: -69px;
+  transform: rotate(2deg);
+}
+
+.cat-background .whisker:nth-child(2) {
+  top: 130px;
+  left: -67px;
+  transform: rotate(-10deg);
+}
+
+.cat-background .whisker:nth-child(3) {
+  top: 145px;
+  left: -61.5px;
+  transform: rotate(-20deg);
+}
+
+.cat-background .whisker:nth-child(4) {
+  top: 115px;
+  left: 199.5px;
+  transform: rotate(-2deg);
+}
+
+.cat-background .whisker:nth-child(5) {
+  top: 130px;
+  left: 197px;
+  transform: rotate(10deg);
+}
+
+.cat-background .whisker:nth-child(6) {
+  top: 145px;
+  left: 191.5px;
+  transform: rotate(20deg);
+}
+</style>
