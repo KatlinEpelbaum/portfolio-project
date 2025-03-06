@@ -1,33 +1,26 @@
 <template>
-  <section class="flex flex-col h-screen relative overflow-hidden justify-center">
+    <section class="flex flex-col h-screen relative overflow-hidden justify-center">
     <!-- Cat CSS Background -->
     <div class="cat-background">
       <div class="cat-container">
         <div class="cat-head">
           <div class="ear-left"></div>
           <div class="ear-right"></div>
-          <div class="ear-inner-left"></div>
-          <div class="ear-inner-right"></div>
           
-          <div class="eye-left">
-            <div class="pupil-left"></div>
-          </div>
-          <div class="eye-right">
-            <div class="pupil-right"></div>
-          </div>
+          <div class="eye-left"></div>
+          <div class="eye-right"></div>
           
           <div class="nose"></div>
           
           <div class="whisker-container">
-            <div class="whisker whisker-4"></div>
-            <div class="whisker whisker-5"></div>
-            <div class="whisker whisker-6"></div>
             <div class="whisker whisker-1"></div>
             <div class="whisker whisker-2"></div>
             <div class="whisker whisker-3"></div>
+            <div class="whisker whisker-4"></div>
+            <div class="whisker whisker-5"></div>
+            <div class="whisker whisker-6"></div>
           </div>
         </div>
-        
         <div class="body"></div>
       </div>
     </div>
@@ -488,8 +481,6 @@ export default {
 };
 </script>
 <style scoped>
-
-
 .cat-background {
   content: '';
   position: absolute;
@@ -501,7 +492,6 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 
 /* Ears */
 .cat-background {
@@ -516,7 +506,6 @@ export default {
   position: absolute;
 }
 
-/* Cat eyes */
 .cat-background .eye-left,
 .cat-background .eye-right,
 .cat-background .nose {
@@ -525,7 +514,6 @@ export default {
 </style>
 
 <style>
-/* Cat parts - these need to be in global scope to use pseudo-elements */
 .cat-background .ear-left {
   top: -40px;
   left: 20px;
@@ -533,9 +521,9 @@ export default {
   height: 0;
   border-left: 40px solid transparent;
   border-right: 15px solid transparent;
-  border-bottom: 90px solid #1a1a2e;
+  border-bottom: 90px solid var(--ear-color);
   transform: rotate(-20deg);
-  z-index: -1;
+  z-index: 1;
 }
 
 .cat-background .ear-right {
@@ -545,9 +533,9 @@ export default {
   height: 0;
   border-left: 15px solid transparent;
   border-right: 40px solid transparent;
-  border-bottom: 90px solid #1a1a2e;
+  border-bottom: 90px solid var(--ear-color);
   transform: rotate(20deg);
-  z-index: -1;
+  z-index: 1;
 }
 
 .cat-background .ear-inner-left {
@@ -557,9 +545,9 @@ export default {
   height: 0;
   border-left: 30px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 70px solid #7952b3;
+  border-bottom: 70px solid var(--inner-ear-color);
   transform: rotate(-20deg);
-  z-index: -2;
+  z-index: 0;
 }
 
 .cat-background .ear-inner-right {
@@ -569,55 +557,59 @@ export default {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 30px solid transparent;
-  border-bottom: 70px solid #7952b3;
+  border-bottom: 70px solid var(--inner-ear-color);
   transform: rotate(20deg);
-  z-index: -2;
+  z-index: 0;
 }
 
-.cat-background .eye-left {
+.cat-background .eye-left,
+.cat-background .eye-right {
   top: 50px;
-  left: 40px;
   width: 50px;
   height: 60px;
   background-color: #d6fffa;
   border-radius: 50%;
   transform: rotate(10deg);
+  z-index: 2;
+  overflow: hidden;
+  position: absolute;
 }
 
 .cat-background .eye-right {
-  top: 50px;
   right: 40px;
-  width: 50px;
-  height: 60px;
-  background-color: #d6fffa;
-  border-radius: 50%;
   transform: rotate(-10deg);
 }
 
-.cat-background .eye-left::after {
-  content: '';
-  position: absolute;
-  top: 25px;
-  left: 15px;
-  width: 10px;
-  height: 25px;
-  background-color: #1a1a2e;
-  border-radius: 50%;
-  transform: rotate(10deg);
+.cat-background .eye-left {
+  left: 40px;
 }
 
+.cat-background .eye-left::after,
 .cat-background .eye-right::after {
   content: '';
   position: absolute;
-  top: 25px;
-  right: 15px;
-  width: 10px;
-  height: 25px;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
   background-color: #1a1a2e;
   border-radius: 50%;
-  transform: rotate(-10deg);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.cat-background .eye-left::before,
+.cat-background .eye-right::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0.8;
+}
 .cat-background .nose {
   top: 130px;
   left: 50%;
@@ -626,6 +618,7 @@ export default {
   height: 6px;
   background-color: #ff9a9e;
   border-radius: 50%;
+  z-index: 2;
 }
 
 /* Whiskers */
@@ -636,39 +629,51 @@ export default {
   background-color: #8a8a8a;
 }
 
-.cat-background .whisker:nth-child(1) {
+.cat-background .whisker-1 {
   top: 115px;
   left: -69px;
   transform: rotate(2deg);
 }
 
-.cat-background .whisker:nth-child(2) {
+.cat-background .whisker-2 {
   top: 130px;
   left: -67px;
   transform: rotate(-10deg);
 }
 
-.cat-background .whisker:nth-child(3) {
+.cat-background .whisker-3 {
   top: 145px;
   left: -61.5px;
   transform: rotate(-20deg);
 }
 
-.cat-background .whisker:nth-child(4) {
+.cat-background .whisker-4 {
   top: 115px;
   left: 199.5px;
   transform: rotate(-2deg);
 }
 
-.cat-background .whisker:nth-child(5) {
+.cat-background .whisker-5 {
   top: 130px;
   left: 197px;
   transform: rotate(10deg);
 }
 
-.cat-background .whisker:nth-child(6) {
+.cat-background .whisker-6 {
   top: 145px;
   left: 191.5px;
   transform: rotate(20deg);
+}
+
+.cat-background .body {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px; 
+  height: 180px; 
+  background-color: #1a1a2e;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  z-index: -1;
 }
 </style>
