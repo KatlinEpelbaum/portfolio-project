@@ -1,24 +1,24 @@
 <template>
-  <section class="flex flex-col h-screen bg-[url(./assets/background.webp)] bg-cover bg-center">
+  <section class="relative flex flex-col h-screen">
+    <canvas ref="bgCanvas" class="absolute inset-0 z-[-1] bg-pink-200"></canvas>
     <div class="flex flex-row justify-center items-center flex-grow">
       <h1 class="text-white text-6xl md:text-9xl text-center mb-6">
         <span class="inline-block" style="font-family: 'Pilcrow Rounded', sans-serif;">
           {{ typingLine }}
         </span>
-        <span v-if="cursorVisible" class="text-slate-400">{{ cursor }}</span>
+        <span v-if="cursorVisible" class="text-pink-300">{{ cursor }}</span>
       </h1>
     </div>
-
     <div class="flex justify-center pb-20 mt-5 animate-bounce">
-        <a href="#skills" class="flex flex-col items-center text-white space-y-2">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-10 h-10" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M8 1.5a.5.5 0 0 1 .5.5v10.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 12.793V2a.5.5 0 0 1 .5-.5z"/>
-          </svg>
-          <span class="text-lg font-semibold">See More</span>
-        </a>
+      <a  class="flex flex-col items-center text-white space-y-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-10 h-10" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 1.5a.5.5 0 0 1 .5.5v10.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 12.793V2a.5.5 0 0 1 .5-.5z"/>
+        </svg>
+        <span class="text-lg font-semibold">See More</span>
+      </a>
     </div>
   </section>
-      <!-- Skills -->
+  <!-- Skills -->
   <section id="skills" class="flex flex-col p-6 md:p-20">
     <div class="relative overflow-hidden">
       <div class="flex animate-marquee w-max">
@@ -400,7 +400,6 @@
   </section>
 </template>
 <script>
-
 export default {
   name: 'App',
   data() {
@@ -419,15 +418,131 @@ export default {
       typingSpeed: 100,
       cursor: "|",
       typingLine: "",
-      cursorVisible: true, 
-      currentTextIndex: 0,
+      cursorVisible: true,
     };
   },
   mounted() {
+    this.initCanvasBackground();
     this.startTyping();
     this.startCursorBlinking();
   },
   methods: {
+    initCanvasBackground() {
+      const canvas = this.$refs.bgCanvas;
+      const ctx = canvas.getContext("2d");
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      
+      const shapes = [];
+
+      // Randomly generate x shapes with different properties
+      for (let i = 0; i < 30; i++) {
+        shapes.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          size: Math.random() * 30 + 10,
+          dx: Math.random() * 2 - 1,
+          dy: Math.random() * 2 - 1,
+          color: ["#FAD02E", "#FFC107", "#FF9800"][Math.floor(Math.random() * 3)],
+          type: Math.random() > 0.5 ? 'star' : 'heart',
+          rotation: Math.random() * Math.PI * 2,
+          rotationSpeed: Math.random() * 0.02 - 0.01
+        });
+      }
+
+      // Draws a 3D star with shadows and gradient
+      function draw3DStar(ctx, x, y, size, color, rotation) {
+        ctx.save();
+        ctx.translate(x, y);
+        ctx.rotate(rotation);
+        
+        const gradient = ctx.createRadialGradient(
+          0, 0, size * 0.2,
+          0, 0, size * 1.5
+        );
+        gradient.addColorStop(0, color);
+        gradient.addColorStop(0.7, "gold");
+        gradient.addColorStop(1, "darkgoldenrod");
+        
+        ctx.fillStyle = gradient;
+        ctx.shadowColor = "rgba(0,0,0,0.5)";
+        ctx.shadowBlur = 15;
+        ctx.shadowOffsetX = 5;
+        ctx.shadowOffsetY = 5;
+        
+        // Draw the star shape
+        ctx.beginPath();
+        for (let i = 0; i < 10; i++) {
+          let angle = Math.PI / 5 * i;
+          let radius = i % 2 === 0 ? size : size / 2.5;
+          let sx = Math.cos(angle) * radius;
+          let sy = Math.sin(angle) * radius;
+          ctx.lineTo(sx, sy);
+        }
+        ctx.closePath();
+        ctx.fill();
+        
+        ctx.shadowColor = "rgba(255,255,255,0.7)";
+        ctx.shadowBlur = 20;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+        ctx.fill();
+        
+        ctx.restore();
+      }
+
+      // Draw a 3D heart shape 
+      function draw3DHeart(ctx, x, y, size, color, rotation) {
+        ctx.save();
+        ctx.translate(x, y);
+        ctx.rotate(rotation);
+        
+        // Create a linear gradient for the heart
+        const gradient = ctx.createLinearGradient(-size, -size, size, size);
+        gradient.addColorStop(0, color);
+        gradient.addColorStop(0.5, "#FF69B4");
+        gradient.addColorStop(1, "#C2185B");
+        
+        ctx.fillStyle = gradient;
+        ctx.shadowColor = "rgba(0,0,0,0.5)";
+        ctx.shadowBlur = 15;
+        ctx.shadowOffsetX = 5;
+        ctx.shadowOffsetY = 5;
+        
+        // Draw the heart shape
+        ctx.beginPath();
+        ctx.moveTo(0, size / 4);
+        ctx.bezierCurveTo(size / 2, -size / 2, size, size / 2, 0, size);
+        ctx.bezierCurveTo(-size, size / 2, -size / 2, -size / 2, 0, size / 4);
+        ctx.closePath();
+        ctx.fill();
+        
+        ctx.restore();
+      }
+      // Function to update the canvas continuously
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the each frame
+        shapes.forEach(shape => {
+          ctx.save();
+          if (shape.type === 'star') {
+            draw3DStar(ctx, shape.x, shape.y, shape.size, shape.color, shape.rotation);
+          } else {
+            draw3DHeart(ctx, shape.x, shape.y, shape.size, shape.color, shape.rotation);
+          }
+          ctx.restore();
+          
+          shape.x += shape.dx;
+          shape.y += shape.dy;
+          shape.rotation += shape.rotationSpeed;
+          
+          if (shape.x < 0 || shape.x > canvas.width) shape.dx *= -1;
+          if (shape.y < 0 || shape.y > canvas.height) shape.dy *= -1;
+        });
+        requestAnimationFrame(animate);
+      }
+      
+      animate();
+    },
     async startTyping() {
       for (const text of this.textParts) {
         await this.typeText(text);
@@ -455,4 +570,6 @@ export default {
     }
   }
 };
+document.body.style.overflowX = "hidden";
+document.documentElement.style.overflowX = "hidden";
 </script>
