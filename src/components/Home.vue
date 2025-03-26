@@ -2,7 +2,7 @@
   <section class="relative flex flex-col h-screen">
     <canvas ref="bgCanvas" class="absolute inset-0 z-[-1] bg-pink-200"></canvas>
     <div class="flex flex-row justify-center items-center flex-grow">
-      <h1 class="text-white text-6xl md:text-9xl text-center mb-6">
+      <h1 class="text-white text-4xl md:text-9xl text-center mb-6">
         <span class="inline-block" style="font-family: 'Pilcrow Rounded', sans-serif;">
           {{ typingLine }}
         </span>
