@@ -432,21 +432,24 @@ export default {
       const ctx = canvas.getContext("2d");
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
-      
+
       const shapes = [];
 
-      // Randomly generate x shapes with different properties
+      // Randomly generate shapes with different properties (stars, hearts, sparkles)
       for (let i = 0; i < 30; i++) {
+        const shapeType = Math.random() < 0.33 ? 'star' : (Math.random() < 0.5 ? 'heart' : 'sparkle');
         shapes.push({
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
-          size: Math.random() * 30 + 10,
+          size: Math.random() * 30 + 20,  // Varying sizes
           dx: Math.random() * 2 - 1,
           dy: Math.random() * 2 - 1,
           color: ["#FAD02E", "#FFC107", "#FF9800"][Math.floor(Math.random() * 3)],
-          type: Math.random() > 0.5 ? 'star' : 'heart',
+          type: shapeType,
           rotation: Math.random() * Math.PI * 2,
-          rotationSpeed: Math.random() * 0.02 - 0.01
+          rotationSpeed: Math.random() * 0.02 - 0.01,
+          opacity: Math.random() * 0.5 + 0.3, 
+          opacityDirection: Math.random() > 0.5 ? 1 : -1,  
         });
       }
 
@@ -491,7 +494,22 @@ export default {
         ctx.restore();
       }
 
-      // Draw a 3D heart shape 
+      // Draw the Sparkle shape with varying opacity
+      function drawSparkle(ctx, x, y, size, opacity) {
+        ctx.save();
+        ctx.translate(x, y);
+        
+        ctx.beginPath();
+        ctx.arc(0, 0, size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(255, 255, 255, ${opacity})`;  // White sparkle with varying opacity
+        ctx.shadowColor = "rgba(255, 255, 255, 0.8)";
+        ctx.shadowBlur = 15;
+        ctx.fill();
+        
+        ctx.restore();
+      }
+
+      // Draw the 3D heart shape
       function draw3DHeart(ctx, x, y, size, color, rotation) {
         ctx.save();
         ctx.translate(x, y);
@@ -519,22 +537,41 @@ export default {
         
         ctx.restore();
       }
+
       // Function to update the canvas continuously
       function animate() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the each frame
+        ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas every frame
         shapes.forEach(shape => {
           ctx.save();
+          
+          // Drawing based on shape type
           if (shape.type === 'star') {
             draw3DStar(ctx, shape.x, shape.y, shape.size, shape.color, shape.rotation);
-          } else {
+          } else if (shape.type === 'heart') {
             draw3DHeart(ctx, shape.x, shape.y, shape.size, shape.color, shape.rotation);
+          } else if (shape.type === 'sparkle') {
+            drawSparkle(ctx, shape.x, shape.y, shape.size, shape.opacity);
           }
+
           ctx.restore();
           
+          // Update positions
           shape.x += shape.dx;
           shape.y += shape.dy;
           shape.rotation += shape.rotationSpeed;
-          
+
+          // Update sparkle opacity
+          if (shape.type === 'sparkle') {
+            if (shape.opacityDirection === 1) {
+              shape.opacity += 0.01;  
+              if (shape.opacity >= 0.8) shape.opacityDirection = -1; 
+            } else {
+              shape.opacity -= 0.01; 
+              if (shape.opacity <= 0.3) shape.opacityDirection = 1; 
+            }
+          }
+
+          // Jump back on edges
           if (shape.x < 0 || shape.x > canvas.width) shape.dx *= -1;
           if (shape.y < 0 || shape.y > canvas.height) shape.dy *= -1;
         });
