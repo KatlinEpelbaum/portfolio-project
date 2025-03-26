@@ -40,7 +40,7 @@
               <router-link to="/contact" class="block text-gray-500 hover:text-pink-500 transition">Contact</router-link>
             </li>
             <li>
-              <router-link to="/contact" class="block text-gray-500 hover:text-pink-500 transition">Projects</router-link>
+              <router-link to="/projects" class="block text-gray-500 hover:text-pink-500 transition">Projects</router-link>
             </li>
           </ul>
         </div>
