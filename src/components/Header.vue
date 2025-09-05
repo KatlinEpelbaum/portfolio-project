@@ -1,6 +1,6 @@
 <template>
   <div class="sticky top-0 z-50 bg-white bg-opacity-90 p-4 flex justify-between items-center">
-    <router-link to="/" class="font-bold text-xl text-pink-400 inline-block animate-[wiggle_2.5s_ease-in-out_infinite]">
+    <router-link to="/" class="font-bold text-xl text-pink-400 inline-block hover:underline">
       Kätlin .E
     </router-link>
 

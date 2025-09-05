@@ -52,20 +52,23 @@
           </div>
   
           <div class="bg-white/90 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8">
-            <h3 class="text-2xl font-bold text-slate-800 mb-3 group-hover:text-pink-500">
-                System Of A Down Project
-            </h3>
+            <a href="https://maprav.ee" target="_blank" rel="noopener noreferrer">
+              <h3 class="text-2xl font-bold text-slate-800 mb-3 group-hover:text-pink-500">
+                MAPRAV OÜ
+              </h3>
+            </a>
+
             <p class="text-slate-600 mb-6 text-lg">
-                A dynamic band website featuring creative solutions. 
-                This was a school project where we collaborated with third-year students to mentor first-year newcomers while building the website.
+                Developed and maintained a bilingual (English and Estonian) company website using Vue.js, JavaScript, Node.js, and Tailwind CSS. 
+                Implemented a working content management system (CMS) allowing updates to images, text, colors, and backgrounds.
             </p>
             <div class="space-y-4">
               <div>
                 <h4 class="text-pink-400 font-bold mb-2">Key Achievements</h4>
                 <ul class="text-slate-600 space-y-2">
-                  <li>✓ Mentoring</li>
-                  <li>✓ Designed in Figma</li>
-                  <li>✓ Implemented creative solutions</li>
+                  <li>✓ Built and deployed a fully responsive, live website</li>
+                  <li>✓ Created and integrated a functional contact form with backend handling</li>
+                  <li>✓ Maintained project documentation in Confluence</li>
                 </ul>
               </div>
             </div>

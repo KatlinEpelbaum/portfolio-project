@@ -6,7 +6,6 @@
         <span class="inline-block" style="font-family: 'Pilcrow Rounded', sans-serif;">
           {{ typingLine }}
         </span>
-        <span v-if="cursorVisible" class="text-pink-300">{{ cursor }}</span>
       </h1>
     </div>
     <div class="flex justify-center pb-20 mt-5 animate-bounce">
@@ -326,26 +325,7 @@
     <!-- About -->
     <section>
       <div class="relative bg-white text-slate-800 font-sans pb-8">
-        <div class="flex items-center justify-between flex-wrap p-10">
-          <h1 class="text-6xl md:text-8xl font-serif mt-20 md:mt-60 hidden md:block md:flex-1">
-            Kätlin
-          </h1>
-          <div class="flex justify-center md:w-42 w-30 mx-auto mt-6 md:mt-0 md:mx-0">
-            <img
-              class="w-30 md:h-42 md:w-42"
-              src="/src/assets/flower.webp"
-              alt="Flower"
-            />
-          </div>
-          <h1 class="text-6xl pr-6 md:text-8xl font-serif mt-20 md:mt-60 text-center md:text-left md:flex-1">
-            Kätlin
-            <span
-              style="font-family: 'Pilcrow Rounded', sans-serif;"
-              class="italic text-transparent pr-4 bg-clip-text bg-gradient-to-r from-pink-400 to-cyan-700">
-              Epelbaum
-            </span>
-          </h1>
-        </div>
+
         <div class="max-w-7xl mx-auto mt-16 px-6 md:px-10">
           <div class="flex flex-col md:flex-row items-center md:items-end">
               <div class="md:w-1/2 flex flex-col justify-center text-center md:text-right mb-6 md:mb-12 pr-0 md:pr-8 md:border-r-4 border-cyan-700">
