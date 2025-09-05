@@ -1,8 +1,8 @@
 <template>
   <section class="relative flex flex-col h-screen">
-    <canvas ref="bgCanvas" class="absolute inset-0 z-[-1] bg-pink-200"></canvas>
+    <canvas ref="bgCanvas" class="absolute inset-0 z-[-1]"></canvas>
     <div class="flex flex-row justify-center items-center flex-grow">
-      <h1 class="text-white text-4xl md:text-9xl text-center mb-6">
+      <h1 class="text-pink-300 text-4xl md:text-9xl text-center mb-6">
         <span class="inline-block" style="font-family: 'Pilcrow Rounded', sans-serif;">
           {{ typingLine }}
         </span>
@@ -325,7 +325,7 @@
     <!-- About -->
     <section>
       <div class="relative bg-white text-slate-800 font-sans pb-8">
-
+        
         <div class="max-w-7xl mx-auto mt-16 px-6 md:px-10">
           <div class="flex flex-col md:flex-row items-center md:items-end">
               <div class="md:w-1/2 flex flex-col justify-center text-center md:text-right mb-6 md:mb-12 pr-0 md:pr-8 md:border-r-4 border-cyan-700">
@@ -402,163 +402,68 @@ export default {
     };
   },
   mounted() {
-    this.initCanvasBackground();
+    this.initMovingSplatter();
     this.startTyping();
     this.startCursorBlinking();
   },
   methods: {
-    initCanvasBackground() {
+    initMovingSplatter() {
       const canvas = this.$refs.bgCanvas;
       const ctx = canvas.getContext("2d");
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
 
-      const shapes = [];
-
-      // Randomly generate shapes with different properties (stars, hearts, sparkles)
-      for (let i = 0; i < 30; i++) {
-        const shapeType = Math.random() < 0.33 ? 'star' : (Math.random() < 0.5 ? 'heart' : 'sparkle');
-        shapes.push({
-          x: Math.random() * canvas.width,
-          y: Math.random() * canvas.height,
-          size: Math.random() * 30 + 20,  // Varying sizes
-          dx: Math.random() * 2 - 1,
-          dy: Math.random() * 2 - 1,
-          color: ["#FAD02E", "#FFC107", "#FF9800"][Math.floor(Math.random() * 3)],
-          type: shapeType,
-          rotation: Math.random() * Math.PI * 2,
-          rotationSpeed: Math.random() * 0.02 - 0.01,
-          opacity: Math.random() * 0.5 + 0.3, 
-          opacityDirection: Math.random() > 0.5 ? 1 : -1,  
-        });
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
       }
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas);
 
-      // Draws a 3D star with shadows and gradient
-      function draw3DStar(ctx, x, y, size, color, rotation) {
-        ctx.save();
-        ctx.translate(x, y);
-        ctx.rotate(rotation);
-        
-        const gradient = ctx.createRadialGradient(
-          0, 0, size * 0.2,
-          0, 0, size * 1.5
-        );
-        gradient.addColorStop(0, color);
-        gradient.addColorStop(0.7, "gold");
-        gradient.addColorStop(1, "darkgoldenrod");
-        
-        ctx.fillStyle = gradient;
-        ctx.shadowColor = "rgba(0,0,0,0.5)";
-        ctx.shadowBlur = 15;
-        ctx.shadowOffsetX = 5;
-        ctx.shadowOffsetY = 5;
-        
-        // Draw the star shape
-        ctx.beginPath();
-        for (let i = 0; i < 10; i++) {
-          let angle = Math.PI / 5 * i;
-          let radius = i % 2 === 0 ? size : size / 2.5;
-          let sx = Math.cos(angle) * radius;
-          let sy = Math.sin(angle) * radius;
-          ctx.lineTo(sx, sy);
+      const colors = [
+        "#f9a8d4",
+        "#67e8f9",
+        "#a78bfa",
+        "#fcd34d",
+        "#34d399",
+      ];
+      // Reduced splatter count and radius for performance
+      const splatters = Array.from({ length: 7 }).map(() => ({
+        x: Math.random() * window.innerWidth,
+        y: Math.random() * window.innerHeight,
+        r: 60 + Math.random() * 60,
+        dx: (Math.random() - 0.5) * 0.4,
+        dy: (Math.random() - 0.5) * 0.4,
+        color: colors[Math.floor(Math.random() * colors.length)],
+        opacity: 0.22 + Math.random() * 0.18,
+      }));
+
+      let lastTime = 0;
+      function animate(time) {
+        // Throttle to ~30 FPS
+        if (time - lastTime < 33) {
+          requestAnimationFrame(animate);
+          return;
         }
-        ctx.closePath();
-        ctx.fill();
-        
-        ctx.shadowColor = "rgba(255,255,255,0.7)";
-        ctx.shadowBlur = 20;
-        ctx.shadowOffsetX = 0;
-        ctx.shadowOffsetY = 0;
-        ctx.fill();
-        
-        ctx.restore();
-      }
+        lastTime = time;
 
-      // Draw the Sparkle shape with varying opacity
-      function drawSparkle(ctx, x, y, size, opacity) {
-        ctx.save();
-        ctx.translate(x, y);
-        
-        ctx.beginPath();
-        ctx.arc(0, 0, size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255, 255, 255, ${opacity})`;  // White sparkle with varying opacity
-        ctx.shadowColor = "rgba(255, 255, 255, 0.8)";
-        ctx.shadowBlur = 15;
-        ctx.fill();
-        
-        ctx.restore();
-      }
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        for (const splat of splatters) {
+          splat.x += splat.dx;
+          splat.y += splat.dy;
+          if (splat.x < 0 || splat.x > canvas.width) splat.dx *= -1;
+          if (splat.y < 0 || splat.y > canvas.height) splat.dy *= -1;
 
-      // Draw the 3D heart shape
-      function draw3DHeart(ctx, x, y, size, color, rotation) {
-        ctx.save();
-        ctx.translate(x, y);
-        ctx.rotate(rotation);
-        
-        // Create a linear gradient for the heart
-        const gradient = ctx.createLinearGradient(-size, -size, size, size);
-        gradient.addColorStop(0, color);
-        gradient.addColorStop(0.5, "#FF69B4");
-        gradient.addColorStop(1, "#C2185B");
-        
-        ctx.fillStyle = gradient;
-        ctx.shadowColor = "rgba(0,0,0,0.5)";
-        ctx.shadowBlur = 15;
-        ctx.shadowOffsetX = 5;
-        ctx.shadowOffsetY = 5;
-        
-        // Draw the heart shape
-        ctx.beginPath();
-        ctx.moveTo(0, size / 4);
-        ctx.bezierCurveTo(size / 2, -size / 2, size, size / 2, 0, size);
-        ctx.bezierCurveTo(-size, size / 2, -size / 2, -size / 2, 0, size / 4);
-        ctx.closePath();
-        ctx.fill();
-        
-        ctx.restore();
-      }
-
-      // Function to update the canvas continuously
-      function animate() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas every frame
-        shapes.forEach(shape => {
           ctx.save();
-          
-          // Drawing based on shape type
-          if (shape.type === 'star') {
-            draw3DStar(ctx, shape.x, shape.y, shape.size, shape.color, shape.rotation);
-          } else if (shape.type === 'heart') {
-            draw3DHeart(ctx, shape.x, shape.y, shape.size, shape.color, shape.rotation);
-          } else if (shape.type === 'sparkle') {
-            drawSparkle(ctx, shape.x, shape.y, shape.size, shape.opacity);
-          }
-
+          ctx.globalAlpha = splat.opacity;
+          ctx.filter = "blur(18px)";
+          ctx.beginPath();
+          ctx.arc(splat.x, splat.y, splat.r, 0, 21* Math.PI);
+          ctx.fillStyle = splat.color;
+          ctx.fill();
           ctx.restore();
-          
-          // Update positions
-          shape.x += shape.dx;
-          shape.y += shape.dy;
-          shape.rotation += shape.rotationSpeed;
-
-          // Update sparkle opacity
-          if (shape.type === 'sparkle') {
-            if (shape.opacityDirection === 1) {
-              shape.opacity += 0.01;  
-              if (shape.opacity >= 0.8) shape.opacityDirection = -1; 
-            } else {
-              shape.opacity -= 0.01; 
-              if (shape.opacity <= 0.3) shape.opacityDirection = 1; 
-            }
-          }
-
-          // Jump back on edges
-          if (shape.x < 0 || shape.x > canvas.width) shape.dx *= -1;
-          if (shape.y < 0 || shape.y > canvas.height) shape.dy *= -1;
-        });
+        }
         requestAnimationFrame(animate);
       }
-      
-      animate();
+      requestAnimationFrame(animate);
     },
     async startTyping() {
       for (const text of this.textParts) {
@@ -588,5 +493,4 @@ export default {
   }
 };
 document.body.style.overflowX = "hidden";
-document.documentElement.style.overflowX = "hidden";
 </script>
