@@ -9,8 +9,8 @@
       </h1>
     </div>
     <div class="flex justify-center pb-20 mt-5 animate-bounce">
-      <a  class="flex flex-col items-center text-white space-y-2">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-10 h-10" viewBox="0 0 16 16">
+      <a  class="flex flex-col items-center text-pink-300 space-y-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-10 h-10 " viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M8 1.5a.5.5 0 0 1 .5.5v10.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 12.793V2a.5.5 0 0 1 .5-.5z"/>
         </svg>
         <span class="text-lg font-semibold">See More</span>
