@@ -35,8 +35,8 @@
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
-                href="src/assets/Curriculum-Vitae.jpg"
-                download="Curriculum-Vitae.jpg"
+                href="public/Katlin CV.pdf"
+                download="Curriculum-Vitae.pdf"
                 class="px-8 py-3 bg-pink-500 text-white rounded-full shadow-lg hover:bg-pink-600 transition-all duration-300 transform hover:scale-105 inline-block text-center"
               >
                 Download CV
